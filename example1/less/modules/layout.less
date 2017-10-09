@@ -1,0 +1,13 @@
+&_layout {
+	.header&, .main&, .footer& { .make-row() }
+
+	.header__logo& { .make-sm-column(2) }
+	.header__menu& { .make-sm-column(10) }
+
+	.main__content& { .make-sm-column(12) }
+
+	.footer__menu& {
+		.make-sm-column-offset(2);
+		.make-sm-column(8);
+	}
+}

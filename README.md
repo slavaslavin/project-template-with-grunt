@@ -1,5 +1,5 @@
 # project-template-with-grunt
-projekt clonen
+Projekt klonen
 ```bash
 git clone https://github.com/slavaslavin/project-template-with-grunt.git <new name of the project>
 ```

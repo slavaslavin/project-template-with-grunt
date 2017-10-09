@@ -1,0 +1,24 @@
+{
+	"name": "example1",
+	"version": "0.1.0",
+	"description": "Tasks for frontent development (less, minify, ...)",
+	"cssDir": "css",
+	"lessDir": "less",
+	"scssDir": "scss",
+	"jsDir": "js",
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-contrib-less": "latest",
+		"grunt-lesslint": "latest",
+		"grunt-less-to-sass": "latest",
+		"grunt-contrib-sass": "latest",
+		"grunt-autoprefixer": "latest",
+		"grunt-contrib-cssmin": "latest",
+		"grunt-contrib-jshint": "latest",
+		"grunt-contrib-concat": "latest",
+		"grunt-contrib-uglify": "latest",
+		"grunt-ng-annotate": "latest",
+		"grunt-contrib-watch": "latest",
+		"load-grunt-tasks": "latest"
+	}
+}

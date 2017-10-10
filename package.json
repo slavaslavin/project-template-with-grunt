@@ -1,5 +1,5 @@
 {
-	"name": "example1",
+	"name": "bem-probe",
 	"version": "0.1.0",
 	"description": "Tasks for frontent development (less, minify, ...)",
 	"cssDir": "css",

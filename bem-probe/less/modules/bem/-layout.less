@@ -1,0 +1,61 @@
+[class*="layout__content"] {
+	.clearfix();
+}
+
+.layout {
+	&-header,
+	&-main,
+	&-footer {
+		.make-row();
+	}
+
+	&-footer {
+		&-menu {
+			.make-row();
+		}
+		&__content {
+			.make-sm-column-offset(1);
+			.make-sm-column(10);
+		}
+	}
+
+	&__content {
+		> * {
+			.make-sm-column(12);
+		}
+
+		&_3 {
+			> * {
+				.make-sm-column(4);
+			}
+		}
+
+		&_1-2,
+		&_2-1 {
+			:nth-child(odd) {
+				.make-xs-column(6);
+			}
+			:nth-child(even) {
+				.make-xs-column(6);
+			}
+		}
+
+		&_1-2 {
+			:nth-child(odd) {
+				.make-sm-column(4);
+			}
+			:nth-child(even) {
+				.make-sm-column(8);
+			}
+		}
+
+		&_2-1 {
+			:nth-child(odd) {
+				.make-sm-column(8);
+			}
+			:nth-child(even) {
+				.make-sm-column(4);
+			}
+		}
+	}
+}

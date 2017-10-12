@@ -160,7 +160,7 @@ module.exports = function (grunt) {
 				src: [
 					// Bibliotheken
 					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/jquery-3.2.1.js',
-					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/bootstrap/*.js'
+					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/bootstrap.js'
 				],
 				dest: '<%= pkg.name %>/<%= pkg.jsDir %>/dist/vendor.js'
 			}
@@ -199,7 +199,6 @@ module.exports = function (grunt) {
 					'<%= pkg.name %>/<%= pkg.lessDir %>/**/**/**/*.less',
 
 					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/*.js',
-					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/**/*.js',
 					'<%= pkg.name %>/<%= pkg.jsDir %>/src/*.js'
 				],
 				// für LESS grunt.loadNpmTasks('grunt-contrib-less') auskommentieren

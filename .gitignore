@@ -2,5 +2,5 @@ node_modules/
 
 .idea/
 
-bem-probe/css
-bem-probe/js/dist
+bem-probe/css/
+bem-probe/js/dist/

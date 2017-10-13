@@ -150,7 +150,8 @@ module.exports = function (grunt) {
 			// Concat all osp js files
 			dist: {
 				src: [
-					'<%= pkg.name %>/<%= pkg.jsDir %>/src/*.js'
+					'<%= pkg.name %>/<%= pkg.jsDir %>/src/*.js',
+					'<%= pkg.name %>/<%= pkg.jsDir %>/*.js'
 				],
 				dest: '<%= pkg.name %>/<%= pkg.jsDir %>/dist/<%= pkg.name %>.js'
 			},
@@ -159,8 +160,13 @@ module.exports = function (grunt) {
 			vendor: {
 				src: [
 					// Bibliotheken
-					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/jquery-3.2.1.js',
-					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/bootstrap.js'
+
+					'node_modules/jquery/dist/jquery.js',
+					'node_modules/bootstrap-less/js/bootstrap.js',
+					'node_modules/slick-carousel/slick/slick.js',
+
+					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/custom-test.js'
+
 				],
 				dest: '<%= pkg.name %>/<%= pkg.jsDir %>/dist/vendor.js'
 			}

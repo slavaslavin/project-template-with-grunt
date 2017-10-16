@@ -13,73 +13,72 @@
 
     </head>
     <body class="page">
-        <header class="header">
+        <header class="header navbar navbar-default">
             <div class="layout-header">
-                <!-- Bootstrap Navbar-->
-                <nav class="navbar navbar-default btstrp_overwrites">
-                    <div class="navbar__inner_flex">
-                        <a class="layout__header-logo navbar-brand" href="#">
-                            <img alt="Logo" src="../images/logo.jpg">
-                        </a>
 
-                        <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Navigation ein-/ausblenden</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
+                <div class="logo layout-header__logo">
+                    <a href="#"><img alt="Logo" src="../images/logo.jpg"></a>
+                </div>
 
-                        <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="navbar-header">
+                    <button type="button"
+                            class="navbar-toggle collapsed"
+                            data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-2"
+                            aria-expanded="false">
+                        <span class="sr-only">Navigation ein-/ausblenden</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-                            <ul class="layout__header-menu nav navbar-nav">
-                                <li class="active"><a href="#">Link <span class="sr-only">(aktuell)</span></a></li>
-                                <li><a href="#">Link</a></li>
-                                <li class="dropdown dropdown__dropdown-menu_fullwidth">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                       aria-haspopup="true" aria-expanded="false">Menü <span class="caret"></span></a>
-                                    <ul class="dropdown-menu dropdown-menu_fullwidth">
-                                        <li><a href="#">Aktion</a></li>
-                                        <li><a href="#">Andere Aktion</a></li>
-                                        <li><a href="#">Irgendwas anderes</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Abgetrennter Link</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Noch ein abgetrennter Link</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 
-                            <form class="layout__header-search navbar-form navbar-left" role="search">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Suchen">
-                                </div>
-                                <button type="submit" class="btn btn-default">Los</button>
-                            </form>
+                    <nav class="layout-header__nav">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#"
+                                   class="dropdown-toggle"
+                                   data-toggle="dropdown"
+                                   role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">
+                                    aaaa
+                                </a>
 
-                            <ul class="layout_header-user nav navbar-nav navbar-right">
-                                <li><a href="#">Link</a></li>
-                                <li class="dropdown dropdown__dropdown-menu_fullwidth">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                       aria-haspopup="true" aria-expanded="false">Menü <span class="caret"></span></a>
-                                    <ul class="dropdown-menu dropdown-menu_fullwidth">
-                                        <li><a href="#">Aktion</a></li>
-                                        <li><a href="#">Andere Aktion</a></li>
-                                        <li><a href="#">Irgendwas anderes</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Abgetrennter Link</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">aaaa 1</a></li>
+                                    <li><a href="#">aaaa 2</a></li>
+                                    <li><a href="#">aaaa 3</a></li>
+                                    <li><a href="#">aaaa 4</a></li>
+                                    <li><a href="#">aaaa 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">bbbb</a></li>
+                            <li><a href="#">cccc</a></li>
+                            <li><a href="#">dddd</a></li>
+                            <li><a href="#">eeee</a></li>
+                        </ul>
+                    </nav>
 
-                        </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav>
-                <!-- Bootstrap Navbar END -->
+                    <div class="search layout-header__search">
+                        <form class="" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Suchen">
+                            </div>
+                            <button type="submit" class="btn btn-default">Los</button>
+                        </form>
+                    </div>
+
+                    <div class="user layout-header__user">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">sign in</a></li>
+                            <li><a href="#">xxx</a></li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </header>
 

@@ -14,360 +14,366 @@
     </head>
     <body class="page">
         <header class="header">
-        <div class="layout-header">
-            <!-- Bootstrap Navbar-->
-            <nav class="navbar navbar-default btstrp_overwrites">
-                <div class="navbar__inner_flex">
-                    <a class="navbar-brand" href="#">
-                        <img alt="Logo" src="../images/logo.jpg">
-                    </a>
-                    <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Navigation ein-/ausblenden</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
+            <div class="layout-header">
+                <!-- Bootstrap Navbar-->
+                <nav class="navbar navbar-default btstrp_overwrites">
+                    <div class="navbar__inner_flex">
+                        <a class="layout__header-logo navbar-brand" href="#">
+                            <img alt="Logo" src="../images/logo.jpg">
+                        </a>
 
-                    <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Link <span class="sr-only">(aktuell)</span></a></li>
-                            <li><a href="#">Link</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">Menü <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Aktion</a></li>
-                                    <li><a href="#">Andere Aktion</a></li>
-                                    <li><a href="#">Irgendwas anderes</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Abgetrennter Link</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Noch ein abgetrennter Link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="navbar-form navbar-left" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Suchen">
-                            </div>
-                            <button type="submit" class="btn btn-default">Los</button>
-                        </form>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Link</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">Menü <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Aktion</a></li>
-                                    <li><a href="#">Andere Aktion</a></li>
-                                    <li><a href="#">Irgendwas anderes</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Abgetrennter Link</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
-            <!-- Bootstrap Navbar END -->
-        </div>
-    </header>
+                        <!-- Titel und Schalter werden für eine bessere mobile Ansicht zusammengefasst -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Navigation ein-/ausblenden</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <!-- Alle Navigationslinks, Formulare und anderer Inhalt werden hier zusammengefasst und können dann ein- und ausgeblendet werden -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                            <ul class="layout__header-menu nav navbar-nav">
+                                <li class="active"><a href="#">Link <span class="sr-only">(aktuell)</span></a></li>
+                                <li><a href="#">Link</a></li>
+                                <li class="dropdown dropdown__dropdown-menu_fullwidth">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Menü <span class="caret"></span></a>
+                                    <ul class="dropdown-menu dropdown-menu_fullwidth">
+                                        <li><a href="#">Aktion</a></li>
+                                        <li><a href="#">Andere Aktion</a></li>
+                                        <li><a href="#">Irgendwas anderes</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Abgetrennter Link</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Noch ein abgetrennter Link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <form class="layout__header-search navbar-form navbar-left" role="search">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Suchen">
+                                </div>
+                                <button type="submit" class="btn btn-default">Los</button>
+                            </form>
+
+                            <ul class="layout_header-user nav navbar-nav navbar-right">
+                                <li><a href="#">Link</a></li>
+                                <li class="dropdown dropdown__dropdown-menu_fullwidth">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Menü <span class="caret"></span></a>
+                                    <ul class="dropdown-menu dropdown-menu_fullwidth">
+                                        <li><a href="#">Aktion</a></li>
+                                        <li><a href="#">Andere Aktion</a></li>
+                                        <li><a href="#">Irgendwas anderes</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Abgetrennter Link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+                <!-- Bootstrap Navbar END -->
+            </div>
+        </header>
 
         <main class="main">
-        <div class="layout-main">
+            <div class="layout-main">
 
-            <div class="main__modul main__modul_no-vert-pddng">
-                <!-- Bootstrap Carousel -->
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="0">
-                    <!-- Positionsanzeiger -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
+                <div class="main__modul main__modul_no-vert-pddng">
+                    <!-- Bootstrap Carousel -->
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Positionsanzeiger -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
 
-                    <!-- Verpackung für die Elemente -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="../images/chess-140340_1280.jpg" alt="">
-                            <div class="carousel-caption">
-                                m et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                                diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                                voluptua. At vero eos et accusam et justo d
+                        <!-- Verpackung für die Elemente -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="../images/chess-140340_1280.jpg" alt="">
+                                <div class="carousel-caption">
+                                    m et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                                    Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                    voluptua. At vero eos et accusam et justo d
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="../images/chess-603624_1280.jpg" alt="">
+                                <div class="carousel-caption">
+                                    nt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctu
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="../images/the-strategy-1080528_1280.jpg" alt="">
+                                <div class="carousel-caption">
+                                    nt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctu
+                                </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <img src="../images/chess-603624_1280.jpg" alt="">
-                            <div class="carousel-caption">
-                                nt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctu
+
+                        <!-- Schalter -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Zurück</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Weiter</span>
+                        </a>
+                    </div>
+                    <!-- Bootstrap Carousel END -->
+                </div>
+
+                <div class="main__modul slider">
+                    <!-- Slick Carousel -->
+                    <div class="slider_js_fade slider-stage">
+                        <div class="slider__slide slide slide_js" style="background-image: url('../images/chess-140340_1280.jpg')">
+                            <div class="slide__inner">
+                                <h2>Slick-Slider</h2>
+                                <p>m et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est</p>
                             </div>
                         </div>
-                        <div class="item">
-                            <img src="../images/the-strategy-1080528_1280.jpg" alt="">
-                            <div class="carousel-caption">
-                                nt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctu
+                        <div class="slider__slide slide slide_js" style="background-image: url('../images/the-strategy-1080528_1280.jpg')">
+                            <div class="slide__inner">
+                                <p>nt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slide slide_js" style="background-image: url('../images/chess-603624_1280.jpg')">
+                            <div class="slide__inner">
+                                <p>nt ut labore et dolore magna aliquyam erat, sed diam vol</p>
+                            </div>
+                        </div>
+                        <div class="slider__slide slide slide_js" style="background-image: url('../images/chess-2730034_1280.jpg')">
+                            <div class="slide__inner">
+                                <p>justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctu</p>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Schalter -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Zurück</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Weiter</span>
-                    </a>
+                    <!-- Slick Carousel END -->
                 </div>
-                <!-- Bootstrap Carousel END -->
-            </div>
 
-            <div class="main__modul slider">
-                <!-- Slick Carousel -->
-                <div class="slider_js_fade slider-stage">
-                    <div class="slider__slide slide" style="background-image: url('../images/chess-140340_1280.jpg')">
-                        <div class="slide__inner">
-                            <p>m et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est</p>
-                        </div>
-                    </div>
-                    <div class="slider__slide slide" style="background-image: url('../images/the-strategy-1080528_1280.jpg')">
-                        <div class="slide__inner">
-                            <p>nt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-                        </div>
-                    </div>
-                    <div class="slider__slide slide" style="background-image: url('../images/chess-603624_1280.jpg')">
-                        <div class="slide__inner">
-                            <p>nt ut labore et dolore magna aliquyam erat, sed diam vol</p>
-                        </div>
-                    </div>
-                    <div class="slider__slide slide" style="background-image: url('../images/chess-2730034_1280.jpg')">
-                        <div class="slide__inner">
-                            <p>justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctu</p>
-                        </div>
+                <div class="main__modul">
+                    <div class="layout__content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
                     </div>
                 </div>
-                <!-- Slick Carousel END -->
-            </div>
 
-            <div class="main__modul">
-                <div class="layout__content">
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    </p>
+                <div class="main__modul">
+                    <div class="layout__content_1-2">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore </p>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                            dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
+                            amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                            aliquam erat volutpat.</p>
+                    </div>
+                    <div class="layout__content">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore </p>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                            dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
+                            amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                            aliquam erat volutpat.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="main__modul">
-                <div class="layout__content_1-2">
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore </p>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                        dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                        praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
-                        amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat.</p>
+                <div class="main__modul">
+                    <div class="layout__content_2-1">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore </p>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                            dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
+                            amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                            aliquam erat volutpat.</p>
+                    </div>
                 </div>
-                <div class="layout__content">
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore </p>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                        dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                        praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
-                        amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat.</p>
-                </div>
-            </div>
 
-            <div class="main__modul">
-                <div class="layout__content_2-1">
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore </p>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                        dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                        praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
-                        amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat.</p>
+                <div class="main__modul">
+                    <div class="layout__content_3">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                            labore et dolore </p>
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                            dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
+                            amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                            aliquam erat volutpat.</p>
+                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                            aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                            esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                            iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                            facilisi.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="main__modul">
-                <div class="layout__content_3">
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                        labore et dolore </p>
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                        dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                        praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
-                        amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                        aliquam erat volutpat.</p>
-                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                        aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
-                        esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-                        iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
-                        facilisi.</p>
-                </div>
-            </div>
-        </div>
-    </main>
+        </main>
 
         <footer class="footer">
-        <div class="layout-footer">
-            <div class="layout-footer__content">
-                <div class="footer-menu">
-                    <div class="layout-footer-menu">
-                        <div class="layout__content_4 btstrp_overwrites panel-group" id="footerMenuAccordion" role="tablist"
-                             aria-multiselectable="true">
+            <div class="layout-footer">
+                <div class="layout-footer__content">
+                    <div class="footer-menu">
+                        <div class="layout-footer-menu">
+                            <div class="layout__content_5 btstrp_overwrites panel-group" id="footerMenuAccordion" role="tablist"
+                                 aria-multiselectable="true">
 
-                            <div class="panel panel-default">
+                                <div class="panel panel-default">
 
-                                <h4 class="panel-heading" role="tab" id="footerMenuHeader1">
-                                    <a role="button"
-                                       data-toggle="collapse"
-                                       data-parent="#footerMenuAccordion"
-                                       href="#collapse1"
-                                       aria-expanded="true"
-                                       class="collapsed"
-                                       aria-controls="collapse1">
-                                        Leistungen
-                                    </a>
-                                </h4>
+                                    <h4 class="panel-heading" role="tab" id="footerMenuHeader1">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#footerMenuAccordion"
+                                           href="#collapse1"
+                                           aria-expanded="true"
+                                           class="collapsed"
+                                           aria-controls="collapse1">
+                                            Leistungen
+                                        </a>
+                                    </h4>
 
-                                <div id="collapse1"
-                                     class="panel-collapse collapse"
-                                     role="tabpanel"
-                                     aria-labelledby="footerMenuHeader1">
-                                    <ul class="panel-body">
-                                        <li><a href="#">Leistungen im Überblick</a></li>
-                                    </ul>
+                                    <div id="collapse1"
+                                         class="panel-collapse collapse"
+                                         role="tabpanel"
+                                         aria-labelledby="footerMenuHeader1">
+                                        <ul class="panel-body">
+                                            <li><a href="#">Leistungen im Überblick</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="panel panel-default">
-                                <h4 class="panel-heading" role="tab" id="footerMenuHeader2">
-                                    <a role="button"
-                                       data-toggle="collapse"
-                                       data-parent="#footerMenuAccordion"
-                                       href="#collapse2"
-                                       aria-expanded="true"
-                                       class="collapsed"
-                                       aria-controls="collapse2">
-                                        Info-Pool
-                                    </a>
-                                </h4>
+                                <div class="panel panel-default">
+                                    <h4 class="panel-heading" role="tab" id="footerMenuHeader2">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#footerMenuAccordion"
+                                           href="#collapse2"
+                                           aria-expanded="true"
+                                           class="collapsed"
+                                           aria-controls="collapse2">
+                                            Info-Pool
+                                        </a>
+                                    </h4>
 
-                                <div id="collapse2"
-                                     class="panel-collapse collapse"
-                                     role="tabpanel"
-                                     aria-labelledby="footerMenuHeader2">
-                                    <ul class="panel-body">
-                                        <li><a href="#">News</a></li>
-                                        <li><a href="#">Social Headlines</a></li>
-                                        <li><a href="#">Vertriebslexikon</a></li>
-                                    </ul>
+                                    <div id="collapse2"
+                                         class="panel-collapse collapse"
+                                         role="tabpanel"
+                                         aria-labelledby="footerMenuHeader2">
+                                        <ul class="panel-body">
+                                            <li><a href="#">News</a></li>
+                                            <li><a href="#">Social Headlines</a></li>
+                                            <li><a href="#">Vertriebslexikon</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="panel panel-default">
-                                <h4 class="panel-heading" role="tab" id="footerMenuHeader3">
-                                    <a role="button"
-                                       data-toggle="collapse"
-                                       data-parent="#footerMenuAccordion"
-                                       href="#collapse3"
-                                       aria-expanded="true"
-                                       class="collapsed"
-                                       aria-controls="collapse3">
-                                        Karriere
-                                    </a>
-                                </h4>
+                                <div class="panel panel-default">
+                                    <h4 class="panel-heading" role="tab" id="footerMenuHeader3">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#footerMenuAccordion"
+                                           href="#collapse3"
+                                           aria-expanded="true"
+                                           class="collapsed"
+                                           aria-controls="collapse3">
+                                            Karriere
+                                        </a>
+                                    </h4>
 
-                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="footerMenuHeader3">
-                                    <ul class="panel-body">
-                                        <li><a href="#">Wir als Arbeitgeber</a></li>
-                                        <li><a href="#">Mitarbeiter-Stories</a></li>
-                                        <li><a href="#">Stellenangebote</a></li>
-                                    </ul>
+                                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="footerMenuHeader3">
+                                        <ul class="panel-body">
+                                            <li><a href="#">Wir als Arbeitgeber</a></li>
+                                            <li><a href="#">Mitarbeiter-Stories</a></li>
+                                            <li><a href="#">Stellenangebote</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="panel panel-default">
-                                <h4 class="panel-heading" role="tab" id="footerMenuHeader4">
-                                    <a role="button"
-                                       data-toggle="collapse"
-                                       data-parent="#footerMenuAccordion"
-                                       href="#collapse4"
-                                       aria-expanded="true"
-                                       class="collapsed"
-                                       aria-controls="collapse4">
-                                        Kontakt
-                                    </a>
-                                </h4>
+                                <div class="panel panel-default">
+                                    <h4 class="panel-heading" role="tab" id="footerMenuHeader4">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#footerMenuAccordion"
+                                           href="#collapse4"
+                                           aria-expanded="true"
+                                           class="collapsed"
+                                           aria-controls="collapse4">
+                                            Kontakt
+                                        </a>
+                                    </h4>
 
-                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="footerMenuHeader4">
-                                    <ul class="panel-body">
-                                        <li><a href="#">Kontaktformular</a></li>
-                                        <li><a href="#">Callback</a></li>
-                                        <li><a href="#">Standort</a></li>
-                                    </ul>
+                                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="footerMenuHeader4">
+                                        <ul class="panel-body">
+                                            <li><a href="#">Kontaktformular</a></li>
+                                            <li><a href="#">Callback</a></li>
+                                            <li><a href="#">Standort</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="panel panel-default">
-                                <h4 class="panel-heading" role="tab" id="footerMenuHeader5">
-                                    <a role="button"
-                                       data-toggle="collapse"
-                                       data-parent="#footerMenuAccordion"
-                                       href="#collapse5"
-                                       aria-expanded="true"
-                                       class="collapsed"
-                                       aria-controls="collapse5">
-                                        Kontakt
-                                    </a>
-                                </h4>
+                                <div class="panel panel-default">
+                                    <h4 class="panel-heading" role="tab" id="footerMenuHeader5">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#footerMenuAccordion"
+                                           href="#collapse5"
+                                           aria-expanded="true"
+                                           class="collapsed"
+                                           aria-controls="collapse5">
+                                            Kontakt
+                                        </a>
+                                    </h4>
 
-                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel"
-                                     aria-labelledby="footerMenuHeader5">
-                                    <ul class="panel-body">
-                                        <li><a href="#">Kontaktformular</a></li>
-                                        <li><a href="#">Callback</a></li>
-                                        <li><a href="#">Standort</a></li>
-                                    </ul>
+                                    <div id="collapse5" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="footerMenuHeader5">
+                                        <ul class="panel-body">
+                                            <li><a href="#">Kontaktformular</a></li>
+                                            <li><a href="#">Callback</a></li>
+                                            <li><a href="#">Standort</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </body>
 </html>

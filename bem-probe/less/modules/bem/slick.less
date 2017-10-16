@@ -1,0 +1,61 @@
+/*
+	Slick-Slider-Plugin - http://kenwheeler.github.io/slick
+ */
+
+.slick {
+
+	&-arrow {
+		position: absolute;
+		top: 35%;
+		z-index: 100;
+
+		&.slick-next {
+			right: 1em;
+		}
+		&.slick-prev {
+			left: 1em;
+		}
+
+		/*width: 2em;
+		height: 2em;
+		overflow: hidden;*/
+
+		&_large {
+
+		}
+		&_small {
+
+		}
+	}
+
+	&-dots{
+		position: absolute;
+		margin: 0;
+		bottom: 0.5em;
+		padding-left: 0;
+		list-style: none;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+
+		> li {
+			margin: 0 .2em;
+			line-height: 0;
+		}
+
+		button {
+			border-radius: 50%;
+			border: 2px solid #2e6da4;
+			width: 1.2em;
+			height: 1.2em;
+			background-color: white;
+			color: transparent;
+			.slick-active& {
+				border: 2px solid lightcoral;
+				width: 1.3em;
+				height: 1.3em;
+			}
+		}
+	}
+}

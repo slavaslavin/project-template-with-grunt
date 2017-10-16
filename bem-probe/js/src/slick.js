@@ -53,6 +53,10 @@ $(document).ready(function () {
 				elClass = $(item).attr("class").split(sliderClass)[1].split(" ")[0].slice(1) :
 				elClass = "default";
 			$(item).slick( sliderParam[elClass] );
+			/*$(item).find(".slider__slide").css({
+				"align-items": "flex-end",
+				"display": "flex"
+			});*/
 		});
 	}
 });

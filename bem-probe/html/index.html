@@ -15,69 +15,74 @@
     <body class="page">
         <header class="header navbar navbar-default">
             <div class="layout-header">
+                <div class="header_flex">
 
-                <div class="logo layout-header__logo">
-                    <a href="#"><img alt="Logo" src="../images/logo.jpg"></a>
-                </div>
 
-                <div class="navbar-header">
-                    <button type="button"
-                            class="navbar-toggle collapsed"
-                            data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-2"
-                            aria-expanded="false">
-                        <span class="sr-only">Navigation ein-/ausblenden</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
+                    <div class="navbar-header">
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                        <div class="logo layout-header__logo">
+                            <a href="#"><img alt="Logo" src="../images/logo.jpg"></a>
+                        </div>
 
-                    <nav class="layout-header__nav">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#"
-                                   class="dropdown-toggle"
-                                   data-toggle="dropdown"
-                                   role="button"
-                                   aria-haspopup="true"
-                                   aria-expanded="false">
-                                    aaaa
-                                </a>
+                        <button type="button"
+                                class="navbar-toggle collapsed"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-2"
+                                aria-expanded="false">
+                            <span class="sr-only">Navigation ein-/ausblenden</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
 
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">aaaa 1</a></li>
-                                    <li><a href="#">aaaa 2</a></li>
-                                    <li><a href="#">aaaa 3</a></li>
-                                    <li><a href="#">aaaa 4</a></li>
-                                    <li><a href="#">aaaa 5</a></li>
+                    <div class="collapse navbar-collapse layout-header-menu"
+                         id="bs-example-navbar-collapse-2">
+                        <div class="header-menu_flex">
+                            <nav class="layout-header__nav">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#"
+                                           class="dropdown-toggle"
+                                           data-toggle="dropdown"
+                                           role="button"
+                                           aria-haspopup="true"
+                                           aria-expanded="false">
+                                            aaaa
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">aaaa 1</a></li>
+                                            <li><a href="#">aaaa 2</a></li>
+                                            <li><a href="#">aaaa 3</a></li>
+                                            <li><a href="#">aaaa 4</a></li>
+                                            <li><a href="#">aaaa 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">bbbb</a></li>
+                                    <li><a href="#">cccc</a></li>
+                                    <li><a href="#">dddd</a></li>
+                                    <li><a href="#">eeee</a></li>
                                 </ul>
-                            </li>
-                            <li><a href="#">bbbb</a></li>
-                            <li><a href="#">cccc</a></li>
-                            <li><a href="#">dddd</a></li>
-                            <li><a href="#">eeee</a></li>
-                        </ul>
-                    </nav>
+                            </nav>
 
-                    <div class="search layout-header__search">
-                        <form class="" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Suchen">
+                            <div class="search layout-header__search">
+                                <form class="" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Suchen">
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Los</button>
+                                </form>
                             </div>
-                            <button type="submit" class="btn btn-default">Los</button>
-                        </form>
-                    </div>
 
-                    <div class="user layout-header__user">
-                        <ul class="nav navbar-nav">
-                            <li><a href="#">sign in</a></li>
-                            <li><a href="#">xxx</a></li>
-                        </ul>
+                            <div class="user layout-header__user">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">xxx</a></li>
+                                    <li><a href="#">sign in</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </header>
@@ -248,12 +253,16 @@
                 <div class="layout-footer__content">
                     <div class="footer-menu">
                         <div class="layout-footer-menu">
-                            <div class="layout__content_5 btstrp_overwrites panel-group" id="footerMenuAccordion" role="tablist"
+                            <div class="layout__content_5 btstrp_overwrites panel-group"
+                                 id="footerMenuAccordion"
+                                 role="tablist"
                                  aria-multiselectable="true">
 
                                 <div class="panel panel-default">
 
-                                    <h4 class="panel-heading" role="tab" id="footerMenuHeader1">
+                                    <h4 class="panel-heading"
+                                        role="tab"
+                                        id="footerMenuHeader1">
                                         <a role="button"
                                            data-toggle="collapse"
                                            data-parent="#footerMenuAccordion"

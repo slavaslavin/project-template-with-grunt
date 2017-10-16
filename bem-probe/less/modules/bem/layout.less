@@ -58,6 +58,22 @@
 			}
 		}
 	}
+
+	&-header {
+		&__logo {
+			.make-xs-column(6);
+			.make-sm-column(2);
+		}
+		&__nav {
+			.make-sm-column(6);
+		}
+		&__search {
+			.make-sm-column(2);
+		}
+		&__user {
+			.make-sm-column(2);
+		}
+	}
 }
 
 @media (min-width: @grid-float-breakpoint) {
@@ -72,17 +88,8 @@
 		}
 
 		&-header {
-			&-logo {
-				//.make-sm-column(2)
-			}
 			&-menu {
-				//.make-sm-column(5)
-			}
-			&-search {
-				//.make-sm-column(4)
-			}
-			&-user {
-				//.make-sm-column(2)
+				.make-row();
 			}
 		}
 	}

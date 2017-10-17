@@ -60,18 +60,10 @@
 	}
 
 	&-header {
-		&__logo {
-			.make-xs-column(6);
-			.make-sm-column(2);
-		}
-		&__nav {
-			.make-sm-column(6);
-		}
-		&__search {
-			.make-sm-column(2);
-		}
-		&__user {
-			.make-sm-column(2);
+		&__menu {
+			//.make-row();
+			.make-xs-column(12);
+			.make-sm-column(10);
 		}
 	}
 }
@@ -90,6 +82,19 @@
 		&-header {
 			&-menu {
 				.make-row();
+				.clearfix();
+			}
+			&__navbar-header {
+				.make-sm-column(2);
+			}
+			&__nav {
+				.make-sm-column(6);
+			}
+			&__search {
+				.make-sm-column(4);
+			}
+			&__user {
+				.make-sm-column(2);
 			}
 		}
 	}

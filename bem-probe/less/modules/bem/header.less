@@ -36,19 +36,15 @@
 		}
 	}
 
-	@media (min-width: @grid-float-breakpoint) {
+	&_desktop {
 		&_flex {
-			//display: flex;
-			//align-items: center;
-			//align-items: flex-end;
-		}
+			//.clearfix();
 
-		&-menu {
-			&_flex {
-				//width: 100%;
-				//display: flex;
-				//align-items: center;
-				//align-items: flex-end;
+			//align-items: center;
+
+			@media (min-width: @grid-float-breakpoint) {
+				display: flex;
+				align-items: flex-end;
 			}
 		}
 	}

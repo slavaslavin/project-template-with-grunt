@@ -1,5 +1,5 @@
 {
-  "name": "bem-probe",
+  "name": "europart",
   "version": "0.1.0",
   "description": "Tasks for frontent development (less, minify, ...)",
   "cssDir": "css",
@@ -22,9 +22,12 @@
     "load-grunt-tasks": "3.5.2"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": ">=3.0.0",
+    "slick-carousel": "1.8.1",
+    "popper.js": "^1.11.0",
     "bootstrap-less": "3.3.8",
-    "jquery": "3.2.1",
-    "slick-carousel": "1.8.1"
+    "bootstrap-v4-dev": "^4.0.0-alpha.6"
   },
   "script": {}
 }

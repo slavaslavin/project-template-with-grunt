@@ -64,7 +64,7 @@ module.exports = function (grunt) {
 				files: [{
 					expand: true,
 					cwd: '<%= pkg.name %>/<%= pkg.lessDir %>',
-					src: ['*.less'],
+					src: ['**/**/*.less'],
 					ext: '.scss',
 					dest: '<%= pkg.name %>/<%= pkg.scssDir %>/less-to-scss'
 				}]
@@ -78,7 +78,7 @@ module.exports = function (grunt) {
 					'<%= pkg.name %>/<%= pkg.cssDir %>/<%= pkg.name %>.css': '<%= pkg.name %>/<%= pkg.scssDir %>/<%= pkg.name %>.scss'
 				},
 				options: {
-					sourceMap: true,
+					//sourceMap: true,
 					style: 'nested'
 				}
 			},
@@ -199,18 +199,21 @@ module.exports = function (grunt) {
 		watch: {
 			styles: {
 				files: [
-					'<%= pkg.name %>/<%= pkg.lessDir %>/*.less',
-					'<%= pkg.name %>/<%= pkg.lessDir %>/**/*.less',
-					'<%= pkg.name %>/<%= pkg.lessDir %>/**/**/*.less',
-					'<%= pkg.name %>/<%= pkg.lessDir %>/**/**/**/*.less',
+					// '<%= pkg.name %>/<%= pkg.lessDir %>/*.less',
+					// '<%= pkg.name %>/<%= pkg.lessDir %>/**/*.less',
+					// '<%= pkg.name %>/<%= pkg.lessDir %>/**/**/*.less',
+					// '<%= pkg.name %>/<%= pkg.lessDir %>/**/**/**/*.less',
+
+
+					'<%= pkg.name %>/<%= pkg.scssDir %>/**/**/**/*.scss',
 
 					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/*.js',
 					'<%= pkg.name %>/<%= pkg.jsDir %>/src/*.js'
 				],
-				// für LESS grunt.loadNpmTasks('grunt-contrib-less') auskommentieren
-				tasks: ['less:dev', 'autoprefixer', 'cssmin', 'jshint', 'concat:dist', 'concat:vendor', 'ngAnnotate', 'uglify'],
-				// für SASS grunt.loadNpmTasks('grunt-contrib-sass') auskommentieren
-				//tasks: ['sass:dev', 'autoprefixer', 'cssmin', 'jshint', 'concat:dist', 'concat:vendor', 'ngAnnotate', 'uglify'],
+				// für LESS grunt.loadNpmTasks('grunt-contrib-less')
+				//tasks: ['less:dev', 'autoprefixer', 'cssmin', 'jshint', 'concat:dist', 'concat:vendor', 'ngAnnotate', 'uglify'],
+				// für SASS grunt.loadNpmTasks('grunt-contrib-sass')
+				tasks: ['sass:dev', 'autoprefixer', 'cssmin', 'jshint', 'concat:dist', 'concat:vendor', 'ngAnnotate', 'uglify'],
 
 				options: {nospawn: true}
 			}
@@ -222,16 +225,18 @@ module.exports = function (grunt) {
 	//grunt.loadNpmTasks('grunt-lesslint');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-less');
+	//grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-autoprefixer');
-	//grunt.loadNpmTasks('grunt-contrib-sass');
-	//grunt.loadNpmTasks('grunt-less-to-sass');
+	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-less-to-sass');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-ng-annotate');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', ['watch']);
 
-	grunt.registerTask('prod', ['less:dev', 'autoprefixer', 'cssmin', 'jshint', 'concat:dist', 'concat:vendor', 'ngAnnotate', 'uglify']);
+	grunt.registerTask('prod', ['sass:dev', 'autoprefixer', 'cssmin', 'jshint', 'concat:dist', 'concat:vendor', 'ngAnnotate', 'uglify']);
+
+	grunt.registerTask('leesToSass', ['lessToSass']);
 };

@@ -1,0 +1,28 @@
+.navbar {
+
+	&-wrap {
+		&-bg {
+			background-color: @navbar-default-bg;
+		}
+	}
+
+	&-header {
+		@media (max-width: @grid-float-breakpoint-max) {
+			// überschreibt Bootstrap &:extend(.clearfix all);
+			&:after,
+			&:before {
+				display: none;
+			}
+		}
+
+		&_mobil {
+			&_flex {
+				@media (max-width: @grid-float-breakpoint-max) {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+			}
+		}
+	}
+}

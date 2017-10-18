@@ -1,0 +1,12 @@
+.header {
+
+	&-inner {
+		@include media-breakpoint-up(sm) {
+			//.clearfix();
+			//align-items: center;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+

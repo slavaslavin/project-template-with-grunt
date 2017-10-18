@@ -1,0 +1,50 @@
+.container {
+	&-meta,
+	&-top,
+	&-menu,
+	&-search,
+	&-main {
+		@extend .container;
+	}
+}
+
+[class*="row-"] {
+	@include make-row();
+}
+
+[class*="col-"] {
+	@include make-col-ready();
+}
+
+.col {
+	&-ogo,
+	&-user,
+
+	&-nav,
+	&-login {
+
+		@include media-breakpoint-up(xs) {
+			@include make-col(12);
+		}
+
+		@include media-breakpoint-up(sm) {
+			@include make-col(6);
+		}
+	}
+
+	&-meta,
+	&-search {
+		@include media-breakpoint-up(xs) {
+			@include make-col(12);
+		}
+	}
+
+	&-slider,
+	&-slide {
+
+	}
+
+	&-bar {
+
+	}
+}

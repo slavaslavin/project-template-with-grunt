@@ -1,0 +1,16 @@
+.dropdown {
+	@media (min-width: @grid-float-breakpoint) {
+		&__dropdown-menu {
+			&_fullwidth {
+				position: static !important;
+			}
+		}
+	    &-menu {
+		    &_fullwidth {
+			    //position: absolute; // bootstrap
+			    left: 0 !important;
+			    right: 0 !important;
+		    }
+	    }
+	}
+}

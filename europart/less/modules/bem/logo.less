@@ -1,0 +1,15 @@
+.logo {
+	display: inline-block;
+	padding-top: @navbar-padding-vertical;
+	padding-bottom: @navbar-padding-vertical;
+	padding-left: @navbar-padding-horizontal;
+	img {
+		height: 3em;
+		@media (min-width: @grid-float-breakpoint) {
+			height: 5em;
+		}
+	}
+	@media (min-width: @grid-float-breakpoint) {
+		padding-left: 0;
+	}
+}

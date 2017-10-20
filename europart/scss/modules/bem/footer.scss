@@ -1,4 +1,52 @@
 .footer {
+	&-menu {
+		@extend .bg-gray-light;
 
+		@extend .navbar-expand-md;
+		@include media-breakpoint-up(md) {
+			.navbar {
+				padding-top: 3em;
+			}
+			.nav-item {
+				&:first-child {
+					a {
+						padding-left: 0;
+					}
+				}
+				a {
+					&:after {
+						content: "|";
+						color: $body-color;
+						padding-left: 1rem;
+					}
+				}
+				&:last-child {
+					a {
+						&:after {
+							content: "";
+							padding-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	&-line {
+		@extend .bg-primary;
+		padding-top: 0.8em;
+		padding-bottom: 0.8em;
+		color: $white;
+		a {
+			color: $white;
+		}
+	}
+	&-description {
+		@extend .bg-gray-light;
+
+		p {
+			margin: 2em 0;
+			color: theme-color("secondary");
+			font-size: $small-font-size;
+		}
+	}
 }
-

@@ -1,5 +1,16 @@
 .header {
-
+	&-meta {
+		@extend .bg-white;
+	}
+	&-top {
+		@extend .bg-yellow;
+	}
+	&-menu {
+		@extend .bg-yellow;
+	}
+	&-search {
+		@extend .bg-primary;
+	}
 	&-inner {
 		@include media-breakpoint-up(sm) {
 			//.clearfix();

@@ -8,5 +8,9 @@
 	&-blue {
 		background-color: $blue;
 	}
-
+	&-gray {
+		&-light {
+			background-color: $gray-400;
+		}
+	}
 }

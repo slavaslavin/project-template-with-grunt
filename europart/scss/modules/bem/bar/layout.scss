@@ -1,0 +1,86 @@
+.bar {
+	&-cols {
+		> * {
+			//@extend .col-auto;
+			@include make-col-ready();
+		}
+	}
+
+	.col {
+		&-tittle {
+			//flex-grow: 1;
+
+			@include media-breakpoint-up(md) {
+				width: auto;
+				flex-grow: 1;
+			}
+		}
+		&-text,
+		&-content {
+			//flex-grow: 1;
+			@include media-breakpoint-up(md) {
+				width: auto;
+				flex-grow: 1;
+			}
+		}
+		&-link {
+			@include media-breakpoint-up(md) {
+				width: auto;
+			}
+		}
+	}
+
+	&-news {
+		.col {
+			&-tittle {
+				@include media-breakpoint-up(md) {
+					@include make-col(4);
+				}
+				@include media-breakpoint-up(lg) {
+					@include make-col(3);
+				}
+			}
+			&-text,
+			&-content {
+				@include media-breakpoint-up(md) {
+					@include make-col(5);
+				}
+				@include media-breakpoint-up(lg) {
+					@include make-col(7);
+				}
+			}
+			&-link {
+				@include media-breakpoint-up(md) {
+					@include make-col(3);
+				}
+				@include media-breakpoint-up(lg) {
+					@include make-col(2);
+				}
+			}
+		}
+	}
+
+	&-weather {
+		.col {
+			&-tittle {
+				@include media-breakpoint-up(md) {
+					@include make-col(4);
+				}
+				@include media-breakpoint-up(lg) {
+					@include make-col(3);
+				}
+			}
+			&-content {
+				@include media-breakpoint-up(md) {
+					@include make-col(8);
+				}
+				@include media-breakpoint-up(lg) {
+					@include make-col(9);
+				}
+			}
+		}
+	}
+}
+
+
+

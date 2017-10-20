@@ -1,15 +1,36 @@
 .container {
-	&-meta,
-	&-top,
-	&-menu,
-	&-search,
+	&-header {
+		&-meta,
+		&-top,
+		&-menu,
+		&-search {
+			@extend .container;
+		}
+	}
+	&-footer {
+		&-menu,
+		&-line,
+		&-description {
+			@extend .container;
+		}
+	}
 	&-main {
 		@extend .container;
 	}
 }
 
+.row {
+	&-footer {
+		&-menu {
+			@include media-breakpoint-up(md) {
+				@include make-row();
+			}
+		}
+	}
+}
+
 [class*="row-"] {
-	@include make-row();
+	//@include make-row();
 }
 
 [class*="col-"] {
@@ -17,9 +38,7 @@
 }
 
 .col {
-	&-ogo,
-	&-user,
-
+	&-logo,
 	&-nav,
 	&-login {
 
@@ -34,9 +53,9 @@
 
 	&-meta,
 	&-search {
-		@include media-breakpoint-up(xs) {
-			@include make-col(12);
-		}
+		//@include media-breakpoint-up(xs) {
+		//	@include make-col(12);
+		//}
 	}
 
 	&-slider,
@@ -44,7 +63,15 @@
 
 	}
 
-	&-bar {
+	&-footer {
+		&-line {
+			@include media-breakpoint-up(xs) {
+				@include make-col(12);
+			}
 
+			@include media-breakpoint-up(sm) {
+				@include make-col(6);
+			}
+		}
 	}
 }

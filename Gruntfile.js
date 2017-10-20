@@ -162,7 +162,8 @@ module.exports = function (grunt) {
 					// Bibliotheken
 
 					'node_modules/jquery/dist/jquery.js',
-					'node_modules/bootstrap-less/js/bootstrap.js',
+					'node_modules/popper.js/dist/umd/popper.js',
+					'node_modules/bootstrap/dist/js/bootstrap.js',
 					'node_modules/slick-carousel/slick/slick.js',
 
 					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/custom-test.js'

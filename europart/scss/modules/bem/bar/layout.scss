@@ -8,8 +8,7 @@
 
 	.col {
 		&-tittle {
-			//flex-grow: 1;
-
+			@include make-col-ready();
 			@include media-breakpoint-up(md) {
 				width: auto;
 				flex-grow: 1;
@@ -17,13 +16,14 @@
 		}
 		&-text,
 		&-content {
-			//flex-grow: 1;
+			@include make-col-ready();
 			@include media-breakpoint-up(md) {
 				width: auto;
 				flex-grow: 1;
 			}
 		}
 		&-link {
+			@include make-col-ready();
 			@include media-breakpoint-up(md) {
 				width: auto;
 			}
@@ -33,6 +33,7 @@
 	&-news {
 		.col {
 			&-tittle {
+				@include make-col-ready();
 				@include media-breakpoint-up(md) {
 					@include make-col(4);
 				}
@@ -42,6 +43,7 @@
 			}
 			&-text,
 			&-content {
+				@include make-col-ready();
 				@include media-breakpoint-up(md) {
 					@include make-col(5);
 				}
@@ -50,6 +52,7 @@
 				}
 			}
 			&-link {
+				@include make-col-ready();
 				@include media-breakpoint-up(md) {
 					@include make-col(3);
 				}
@@ -63,6 +66,7 @@
 	&-weather {
 		.col {
 			&-tittle {
+				@include make-col-ready();
 				@include media-breakpoint-up(md) {
 					@include make-col(4);
 				}
@@ -71,6 +75,7 @@
 				}
 			}
 			&-content {
+				@include make-col-ready();
 				@include media-breakpoint-up(md) {
 					@include make-col(8);
 				}

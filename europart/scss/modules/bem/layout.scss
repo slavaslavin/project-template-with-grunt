@@ -20,6 +20,15 @@
 }
 
 .row {
+	&-header {
+		&-menu {
+			@include media-breakpoint-up(sm) {
+				@include make-row();
+				flex-direction: row-reverse;
+				justify-content: flex-end;
+			}
+		}
+	}
 	&-footer {
 		&-menu {
 			@include media-breakpoint-up(md) {
@@ -29,33 +38,65 @@
 	}
 }
 
-[class*="row-"] {
-	//@include make-row();
-}
-
-[class*="col-"] {
-	@include make-col-ready();
-}
-
 .col {
-	&-logo,
-	&-nav,
-	&-login {
 
-		@include media-breakpoint-up(xs) {
-			@include make-col(12);
+	&-header {
+		&-user {
+			@include make-col-ready();
+			@include media-breakpoint-up(xs) {
+				@include make-col(12);
+			}
+
+			@include media-breakpoint-up(sm) {
+				@include make-col(4);
+			}
 		}
 
-		@include media-breakpoint-up(sm) {
-			@include make-col(6);
+		&-login,
+		&-navbar {
+
+			@include media-breakpoint-up(xs) {
+				@include make-col-ready();
+				@include make-col(12);
+			}
+
+			@include media-breakpoint-up(sm) {
+				flex: 0 0 auto;
+				width: auto;
+				max-width: none;
+			}
+		}
+
+		&-navbar {
+			@include media-breakpoint-up(sm) {
+				margin-right: auto !important;
+			}
+		}
+
+		&-search {
+			&__input {
+				@include make-col-ready();
+				@include media-breakpoint-up(xs) {
+					@include make-col(12);
+				}
+				@include media-breakpoint-up(sm) {
+					@include make-col(9);
+				}
+			}
+			&__advanced {
+				@include make-col-ready();
+				@include media-breakpoint-up(xs) {
+					@include make-col(12);
+				}
+				@include media-breakpoint-up(sm) {
+					@include make-col(3);
+				}
+			 }
 		}
 	}
 
-	&-meta,
-	&-search {
-		//@include media-breakpoint-up(xs) {
-		//	@include make-col(12);
-		//}
+	&-modul {
+		@include make-col-ready();
 	}
 
 	&-slider,
@@ -65,11 +106,12 @@
 
 	&-footer {
 		&-line {
+			@include make-col-ready();
 			@include media-breakpoint-up(xs) {
 				@include make-col(12);
 			}
 
-			@include media-breakpoint-up(sm) {
+			@include media-breakpoint-up(md) {
 				@include make-col(6);
 			}
 		}

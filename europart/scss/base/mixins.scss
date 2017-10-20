@@ -1,0 +1,9 @@
+@mixin first-nav-item-pd($distance: 0) {
+	.nav-item {
+		&:first-child {
+			a {
+				padding-left: $distance;
+			}
+		}
+	}
+}

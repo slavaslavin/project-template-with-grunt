@@ -1,18 +1,38 @@
 .footer {
 	&-menu {
 		@extend .bg-gray-light;
-
 		@extend .navbar-expand-md;
-		@include media-breakpoint-up(md) {
+	}
+	&-line {
+		@extend .bg-primary;
+		padding-top: 0.8em;
+		padding-bottom: 0.8em;
+		color: $white;
+		a {
+			color: $white;
+		}
+
+		.text-right {
+			text-align: left !important;
+		}
+	}
+	&-description {
+		@extend .bg-gray-light;
+
+		p {
+			margin: 2em 0;
+			color: theme-color("secondary");
+			font-size: $small-font-size;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		&-menu {
 			.navbar {
 				padding-top: 3em;
 			}
+			@include first-nav-item-pd();
 			.nav-item {
-				&:first-child {
-					a {
-						padding-left: 0;
-					}
-				}
 				a {
 					&:after {
 						content: "|";
@@ -30,23 +50,10 @@
 				}
 			}
 		}
-	}
-	&-line {
-		@extend .bg-primary;
-		padding-top: 0.8em;
-		padding-bottom: 0.8em;
-		color: $white;
-		a {
-			color: $white;
-		}
-	}
-	&-description {
-		@extend .bg-gray-light;
-
-		p {
-			margin: 2em 0;
-			color: theme-color("secondary");
-			font-size: $small-font-size;
+		&-line {
+			.text-right {
+				text-align: right !important;
+			}
 		}
 	}
 }

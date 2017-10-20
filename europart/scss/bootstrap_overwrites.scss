@@ -1,20 +1,42 @@
 //
 // Variables
 // --------------------------------------------------
-$brand-primary: #005caa; // change
-$navbar-default-bg: #f9ca3a; // change
+$brand-primary:             #005caa;
+$navbar-default-bg:         #f9ca3a;
 
 // Colors
-$gray-400: #ececec;
-$gray-600: #b6b6b6;
-$blue: #005caa;
-$yellow:  #f9ca3a;
+$black:                     #000;
+$white:                     #fff;
+$red:                       #ff0000;
+$gray-100:                  #f8f9fa;
+$gray-400:                  #ececec;
+$gray-600:                  #b6b6b6;
+$gray-800:                  #343a40;
+$blue:                      #005caa;
+$yellow:                    #f9ca3a;
+$green:                     #28a745;
+$cyan:                      #17a2b8;
 
-$card-border-color: $gray-600;
+$card-border-color:         $gray-600;
+
+$theme-colors: (
+	"primary": $blue,
+	"secondary": $gray-600,
+	"success": $green,
+	"info": $cyan,
+	"warning": $yellow,
+	"danger": $red,
+	"light": $gray-100,
+	"dark": $gray-800,
+	"white": $white
+);
 
 //$body-color:    $gray-900 !default;
 
 
 // Navbar links
-$navbar-default-link-color: $brand-primary; // change
+$navbar-default-link-color: $brand-primary;
+
+// Fonts
+//$font-family-base: $font-family-sans-serif;
 

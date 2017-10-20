@@ -1,22 +1,103 @@
 .header {
+	[class^="col"] {
+		display: flex;
+		align-items: center;
+	}
+
 	&-meta {
 		@extend .bg-white;
 	}
+
 	&-top {
 		@extend .bg-yellow;
+		border-bottom: 2px solid $white;
+
+		.tittle {
+			display: none;
+			color: $white;
+			font-size: 22px;
+			font-weight: 600;
+		}
+		@include media-breakpoint-up(sm) {
+			.tittle {
+				display: block;
+			}}
 	}
+
+	&-logo {
+		&__img {
+			height: 30px;
+		}
+		@include media-breakpoint-up(sm) {
+		&__img {
+			height: 100%;
+		}}
+	}
+
+	&-user {
+		border-top: 2px solid white;
+		@include media-breakpoint-up(sm) {
+			border-top: none;
+			&.collapse {
+				display: inherit;
+			}
+		}
+	}
+
 	&-menu {
 		@extend .bg-yellow;
+		@extend .navbar-expand-sm;
+		border-bottom: 2px solid $white;
+
+		@include media-breakpoint-up(sm) {
+			&.collapse {
+				display: inherit;
+			}
+			.navbar {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+
+			.nav-item {
+				border-left: 2px solid white;
+				&:last-child {
+					border-right: 2px solid white;
+				}
+			}
+		}
+		@include media-breakpoint-up(sm) {}
 	}
+
+	&-login {
+		border-bottom: 2px solid white;
+		@include media-breakpoint-up(sm) {
+			border-bottom: none;
+		}
+	}
+
 	&-search {
 		@extend .bg-primary;
-	}
-	&-inner {
 		@include media-breakpoint-up(sm) {
-			//.clearfix();
-			//align-items: center;
-			display: flex;
-			align-items: center;
+			&.collapse {
+				display: inherit;
+			}
+		}
+
+		.input-group {
+			padding: .5em;
+		}
+
+		.link {
+			color: $white;
+		}
+	}
+
+	@include media-breakpoint-up(sm) {
+		.navbar {
+			justify-content: flex-start;
+			&-toggler {
+				display: none;
+			}
 		}
 	}
 }

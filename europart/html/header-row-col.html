@@ -30,29 +30,29 @@
                                 <span class="textOtherStore"><i class="fa fa-angle-right"></i> Andere Filiale suchen </span>
                             </a>
 
-                            <a class="close"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    href="#headerMeta"
-                                    aria-expanded="false">
-                                &times;
-                                <span class="sr-only">Schließen</span>
-                            </a>
+                            <button type="button"
+                                    class="close"
+                                    aria-label="Close"
+                                    data-target="#headerMeta"
+                                    data-toggle="collapse">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
 
                     </div>
                 </div>
+
             </div>
 
             <div class="header-top">
                 <div class="container-header-top">
                     <div class="row">
 
-                        <nav class="navbar navbar-light">
-                            <a class="navbar-brand" href="#">
-                                <img src="../images/logo.png" class="d-inline-block align-top" alt="">
+                        <nav class="navbar col navbar-light">
+                            <a class="navbar-brand header-logo" href="#">
+                                <img src="../images/logo.png" class="d-inline-block align-top header-logo__img" alt="">
                             </a>
-                            <h2>EUROPART Werkstatt-Online-System</h2>
+                            <h2 class="h2 tittle">EUROPART Werkstatt-Online-System</h2>
 
                             <button class="navbar-toggler"
                                     type="button"
@@ -65,7 +65,7 @@
                             </button>
                         </nav>
 
-                        <div id="#headerUser" class="header-user col" style="background-color: green">
+                        <div id="headerUser" class="header-user col-header-user collapse" style="background-color: green">
                             USER
                         </div>
 
@@ -75,13 +75,71 @@
 
             <div id="headerMenu" class="header-menu collapse">
                 <div class="container-header-menu">
-                    <div class="row">
-                        <div class="col" style="background-color: darkgray">
-                            NAVIGATION
-                        </div>
-                        <div class="col" style="background-color: #00b3ee">
+                    <div class="row-header-menu">
+
+                        <div class="col-header-login header-login">
                             LOGIN
                         </div>
+
+                        <!--<div class="col-header-menu">-->
+
+                        <nav class="navbar col-header-navbar">
+
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle"
+                                       href="#" id="headerMenuItem1"
+                                       role="button"
+                                       data-toggle="dropdown"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">
+                                        Artikel finden
+                                    </a>
+                                    <div class="dropdown-menu"
+                                         aria-labelledby="headerMenuItem1">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle"
+                                       href="#" id="headerMenuItem2"
+                                       role="button"
+                                       data-toggle="dropdown"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">
+                                        bestellen
+                                    </a>
+                                    <div class="dropdown-menu"
+                                         aria-labelledby="headerMenuItem2">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle"
+                                       href="#" id="headerMenuItem3"
+                                       role="button"
+                                       data-toggle="dropdown"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">
+                                        mein EWOS
+                                    </a>
+                                    <div class="dropdown-menu"
+                                         aria-labelledby="headerMenuItem3">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </nav>
+
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
@@ -89,9 +147,33 @@
             <div id="headerSearch" class="header-search collapse">
                 <div class="container-header-search">
                     <div class="row">
-                        <div class="col">
-                            SUCHE
+                        <div class="col-header-search__input">
+
+                            <div class="input-group">
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Artikelsuche: Suchbegrief, Artikelnummer, ..."
+                                       aria-label="Artikelsuche: Suchbegrief, Artikelnummer, ...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-white"
+                                            type="button">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                        <span class="sr-only">Suche</span>
+                                    </button>
+                                </span>
+                            </div>
+
                         </div>
+
+                        <div class="col-header-search__advanced">
+
+                            <a href="#" class="link">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                Erweiterte Suche
+                            </a>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -107,7 +189,7 @@
                             <div class="col slide">
 
                                 <div class="card">
-                                    <img class="card-img-top" src="../images/chess-140340_1280.jpg"
+                                    <img class="card-img-top" src="../images/noimage_pressrelease.png"
                                          alt="Card image cap">
                                     <div class="card-body">
                                         <h4 class="card-title">Card title</h4>
@@ -122,7 +204,7 @@
                             <div class="col slide">
 
                                 <div class="card">
-                                    <img class="card-img-top" src="../images/the-strategy-1080528_1280.jpg"
+                                    <img class="card-img-top" src="../images/epc-content_2.jpg"
                                          alt="Card image cap">
                                     <div class="card-body">
                                         <h4 class="card-title">Card title</h4>
@@ -136,7 +218,7 @@
                             <div class="col slide">
 
                                 <div class="card">
-                                    <img class="card-img-top" src="../images/chess-603624_1280.jpg"
+                                    <img class="card-img-top" src="../images/epc-content.jpg"
                                          alt="Card image cap">
                                     <div class="card-body">
                                         <h4 class="card-title">Card title</h4>
@@ -331,7 +413,7 @@
                     <div class="col-modul">
 
                         <div class="row bar bar-weather">
-                            <h2 class="h2 col-tittle">Wetter</h2>
+                            <h2 class="h2 col-tittle">Ihre Region Ort</h2>
                             <p class="col-content">
                                 xxx
                             </p>
@@ -409,7 +491,7 @@
                 <div class="container-footer-line">
                     <div class="row">
                         <div class="col-footer-line"><a href="#">Verkauf nur an Wiederverkäufer und gewerbliche Verbraucher</a></div>
-                        <div class="col-footer-line text-right"><a href="#">&trade; EWOS - EUROPART Werkstatt-Online-System</a></div>
+                        <div class="col-footer-line text-right"><a href="#">&reg; EWOS - EUROPART Werkstatt-Online-System</a></div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,12 @@
+.link {
+	&:hover {
+		text-decoration: none;
+	}
+	&-white {
+		color: $white;
+		&:hover,
+		&focus {
+			color: $gray-200;
+		}
+	}
+}

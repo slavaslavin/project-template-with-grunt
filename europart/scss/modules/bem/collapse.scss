@@ -1,0 +1,23 @@
+.header {
+	&-top,
+	&-search {
+		.collapse {
+			@include media-breakpoint-up(sm) {
+				display: inherit;
+				&.show {
+					display: inherit;
+				}
+			}
+		}
+	}
+	&-menu {
+		&.collapse {
+			@include media-breakpoint-up(sm) {
+				display: inherit;
+				&.show {
+					display: inherit;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.header-meta {
+	font-size: .8rem;
+	@extend .bg-white;
+
+	.icon {
+
+		&:before,
+		&:after {
+			margin: 0 .2rem;
+		}
+	}
+}

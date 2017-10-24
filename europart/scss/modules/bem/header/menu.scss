@@ -1,0 +1,25 @@
+.header-menu {
+	@extend .bg-yellow;
+	@extend .navbar-expand-sm;
+	border-bottom: 2px solid $white;
+
+	.icon {
+		@extend .icon_large;
+	}
+
+	@include media-breakpoint-up(sm) {
+
+		.navbar {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		.nav-item {
+			border-left: 2px solid white;
+			text-transform: uppercase;
+			&:last-child {
+				border-right: 2px solid white;
+			}
+		}
+	}
+}

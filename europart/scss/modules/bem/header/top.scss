@@ -1,0 +1,21 @@
+.header-top {
+	@extend .bg-yellow;
+	border-bottom: 2px solid $white;
+
+	.icon {
+		@extend .icon_large;
+	}
+
+	.tittle {
+		display: none;
+		color: $white;
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin: 0;
+	}
+	@include media-breakpoint-up(sm) {
+		.tittle {
+			display: block;
+		}
+	}
+}

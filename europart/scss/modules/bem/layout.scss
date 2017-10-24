@@ -1,12 +1,4 @@
 .container {
-	&-header {
-		&-meta,
-		&-top,
-		&-menu,
-		&-search {
-			@extend .container;
-		}
-	}
 	&-footer {
 		&-menu,
 		&-line,
@@ -20,15 +12,6 @@
 }
 
 .row {
-	&-header {
-		&-menu {
-			@include media-breakpoint-up(sm) {
-				@include make-row();
-				flex-direction: row-reverse;
-				justify-content: flex-end;
-			}
-		}
-	}
 	&-footer {
 		&-menu {
 			@include media-breakpoint-up(md) {
@@ -39,62 +22,6 @@
 }
 
 .col {
-
-	&-header {
-		&-user {
-			@include make-col-ready();
-			@include media-breakpoint-up(xs) {
-				@include make-col(12);
-			}
-
-			@include media-breakpoint-up(sm) {
-				@include make-col(4);
-			}
-		}
-
-		&-login,
-		&-navbar {
-
-			@include media-breakpoint-up(xs) {
-				@include make-col-ready();
-				@include make-col(12);
-			}
-
-			@include media-breakpoint-up(sm) {
-				flex: 0 0 auto;
-				width: auto;
-				max-width: none;
-			}
-		}
-
-		&-navbar {
-			@include media-breakpoint-up(sm) {
-				margin-right: auto !important;
-			}
-		}
-
-		&-search {
-			&__input {
-				@include make-col-ready();
-				@include media-breakpoint-up(xs) {
-					@include make-col(12);
-				}
-				@include media-breakpoint-up(sm) {
-					@include make-col(9);
-				}
-			}
-			&__advanced {
-				@include make-col-ready();
-				@include media-breakpoint-up(xs) {
-					@include make-col(12);
-				}
-				@include media-breakpoint-up(sm) {
-					@include make-col(3);
-				}
-			 }
-		}
-	}
-
 	&-modul {
 		@include make-col-ready();
 	}

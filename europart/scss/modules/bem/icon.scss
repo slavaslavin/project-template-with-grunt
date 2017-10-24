@@ -1,0 +1,42 @@
+.icon {
+
+	vertical-align: middle;
+
+	&:before,
+	&:after {
+		@extend .fa;
+	}
+	&:before {
+		margin-right: .5rem;
+	}
+	&:after {
+		margin-left: .5rem;
+	}
+	&_link {
+		@extend .fa-chevron-right;
+	}
+	&_cog {
+		@extend .fa-cog;
+	}
+	&_cart {
+		@extend .fa-shopping-cart;
+	}
+	&_power {
+		&:after {
+			content: "\f011";
+		}
+	}
+	&_list {
+		@extend .fa-list-alt;
+	}
+	&_search {
+		@extend .fa-search;
+	}
+	&-close {
+		@extend .fa-times;
+	}
+
+	&_large {
+		font-size: 1.6rem;
+	}
+}

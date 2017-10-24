@@ -1,0 +1,24 @@
+.header-search {
+	@extend .bg-primary;
+	@include media-breakpoint-up(sm) {
+		display: flex;
+		align-items: center;
+	}
+
+	.icon {
+		@extend .icon_large;
+	}
+
+	&-input {
+
+	}
+
+	&-advanced {
+		display: flex;
+		align-items: center;
+	}
+
+	.input-group {
+		padding: .5em 0;
+	}
+}

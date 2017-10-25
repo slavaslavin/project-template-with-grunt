@@ -1,0 +1,25 @@
+.wide-submenu {
+	@include media-breakpoint-up(sm) {
+		position: relative;
+
+		[class*="container-"],
+		.dropdown,
+		.navbar,
+		//.navbar-nav,
+		.col,
+		[class*="col-"] {
+			position: static !important;
+		}
+
+		&__content,
+		.dropdown-menu {
+			position: absolute !important;
+			left: 0;
+			right: 0;
+			background-color: $white;
+			border: none;
+			border-radius: 0;
+			box-shadow: 0 2000px 0 2000px rgba(0, 0, 0, .475);
+		}
+	}
+}

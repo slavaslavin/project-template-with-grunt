@@ -17,9 +17,9 @@
 	}
 
 	&-user {
-
 		border-top: 2px solid white;
 		width: 100%;
+		@include nav-links-mobil();
 		@include media-breakpoint-up(sm) {
 			width: auto;
 			border-top: none;
@@ -33,6 +33,7 @@
 
 	&-login {
 		border-bottom: 2px solid white;
+		@include nav-links-mobil();
 		@include media-breakpoint-up(sm) {
 			display: flex;
 			align-items: center;

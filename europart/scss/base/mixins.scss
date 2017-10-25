@@ -20,3 +20,27 @@
 		}
 	}
 }
+
+@mixin compensation-left-right($compensation: $grid-gutter-width) {
+		margin: 0 (-$compensation / 2);
+		padding: 0 $compensation / 2;
+}
+
+@mixin compensation-left-right-mobil($compensation: $grid-gutter-width) {
+	@include media-breakpoint-down(xs) {
+		@include compensation-left-righ($compensation);
+	}
+}
+
+@mixin nav-links-mobil($bg: $brand-primary, $color: $white, $compensation: $grid-gutter-width) {
+	@include media-breakpoint-down(xs) {
+		> a {
+			display: block;
+			@include compensation-left-right($compensation);
+			&:hover {
+				background-color: $bg;
+				color: $color;
+			}
+		}
+	}
+}

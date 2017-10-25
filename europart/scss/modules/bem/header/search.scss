@@ -1,4 +1,7 @@
 .header-search {
+	position: relative;
+	z-index: $z-index-wide-2;
+
 	@extend .bg-primary;
 	@include media-breakpoint-up(sm) {
 		display: flex;

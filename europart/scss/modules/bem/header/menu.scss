@@ -7,18 +7,14 @@
 		@extend .icon_large;
 	}
 
-	.header-login {
-
+	.navbar {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 
-	@include media-breakpoint-up(sm) {
-
-		.navbar {
-			padding-top: 0;
-			padding-bottom: 0;
-		}
-
-		.nav-item {
+	.nav-item {
+		@include nav-links-mobil();
+		@include media-breakpoint-up(sm) {
 			border-left: 2px solid white;
 			text-transform: uppercase;
 			&:last-child {
@@ -26,4 +22,16 @@
 			}
 		}
 	}
+
+	.dropdown-menu {
+		@include media-breakpoint-down(xs) {
+			font-size: 1rem;
+			color: $brand-primary;
+			background-color: $white;
+			border: none;
+			border-radius: 0;
+		}
+	}
+
+
 }

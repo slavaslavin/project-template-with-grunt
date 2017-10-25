@@ -15,17 +15,17 @@
     <body class="page">
 
         <header class="header">
-            <div id="headerMeta" class="header-meta collapse show">
+            <div id="headerMeta" class="header-meta collapse">
 
                 <div class="container-header-meta">
                     <div class="row">
 
-                        <div class="col nearest-store">
+                        <div class="col-header-meta">
                             <span>Nächstgelegene Filiale zum jetzigen Standort: </span>
                             <a href=""><span id="branchData">Nicht ermittelbar</span></a>
                         </div>
 
-                        <div class="col other-store text-right">
+                        <div class="col-header-meta text-right">
                             <a href="/de/services/filialfinder" class="link">
                                 <i class="icon icon_link" aria-hidden="true"></i>
                                 <span class="textOtherStore">Andere Filiale suchen</span>
@@ -35,7 +35,7 @@
                                     aria-label="Close"
                                     href="#headerMeta"
                                     data-toggle="collapse">
-                                <i class="icon icon-close" aria-hidden="true"></i>
+                                <i class="icon icon_close" aria-hidden="true"></i>
                             </a>
                         </div>
 
@@ -48,7 +48,7 @@
                 <div class="container-header-top">
                     <div class="row">
 
-                        <nav class="navbar col-header-navbar navbar-light">
+                        <nav class="navbar col-header-logo navbar-light">
                             <a class="navbar-brand header-logo" href="#">
                                 <img src="../images/logo.png" class="d-inline-block align-top header-logo__img" alt="">
                             </a>
@@ -66,14 +66,14 @@
                         </nav>
 
                         <div class="col-header-user header-user collapse">
-                            <a href="#" class="link">
+                            <a href="#" class="link link_icon-only_tablet-landscape">
                                 <i class="icon icon_list" aria-hidden="true"></i>
                                 <span>Meine Listen</span>
                             </a>
                         </div>
 
                         <div class="col-header-user header-user collapse">
-                            <a href="#" class="link">
+                            <a href="#" class="link link_icon-only_tablet-landscape">
                                 <i class="icon icon_cart" aria-hidden="true"></i>
                                 <span>Warenkorb</span>
                             </a>
@@ -88,9 +88,9 @@
                     <div class="row-header-menu">
 
                         <div class="col-header-login header-login">
-                            <a href="#" class="link">
-                                <span>Willkommen Herr Musterman</span>
+                            <a href="#" class="link header-login__link">
                                 <i class="icon icon_power" aria-hidden="true"></i>
+                                <span>Willkommen Herr Musterman</span>
                             </a>
                         </div>
 
@@ -99,7 +99,7 @@
                         <nav class="navbar col-header-navbar">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle"
+                                    <a class="nav-link"
                                        href="#" id="headerMenuItem1"
                                        role="button"
                                        data-toggle="dropdown"
@@ -117,7 +117,7 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle"
+                                    <a class="nav-link"
                                        href="#" id="headerMenuItem2"
                                        role="button"
                                        data-toggle="dropdown"
@@ -133,7 +133,7 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle"
+                                    <a class="nav-link"
                                        href="#" id="headerMenuItem3"
                                        role="button"
                                        data-toggle="dropdown"
@@ -159,23 +159,27 @@
                 <div class="container-header-search">
                     <div class="row">
                         <div class="header-search-input col">
-                            <div class="input-group">
-                                <input type="text"
-                                       class="form-control"
-                                       placeholder="Artikelsuche: Suchbegrief, Artikelnummer, ..."
-                                       aria-label="Artikelsuche: Suchbegrief, Artikelnummer, ...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-white"
-                                            type="button">
-                                        <i class="icon icon_search" aria-hidden="true"></i>
-                                        <span class="sr-only">Suche</span>
-                                    </button>
-                                </span>
-                            </div>
+
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="text"
+                                           class="form-control"
+                                           placeholder="Artikelsuche: Suchbegrief, Artikelnummer, ..."
+                                           aria-label="Artikelsuche: Suchbegrief, Artikelnummer, ...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-white"
+                                                type="submit">
+                                            <i class="icon icon_search" aria-hidden="true"></i>
+                                            <span class="sr-only">Suche</span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+
                         </div>
 
                         <div class="header-search-advanced col-auto">
-                            <a href="#" class="link-white">
+                            <a href="#" class="header-search-advanced__link">
                                 <i class="icon icon_cog" aria-hidden="true"></i>
                                 <span>Erweiterte Suche</span>
                             </a>
@@ -516,5 +520,7 @@
                 </div>
             </div>
         </footer>
+
+        <div id="geoLocation"></div>
     </body>
 </html>

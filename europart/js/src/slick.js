@@ -2,7 +2,7 @@
  * Created by Alexej Schwarz on 13.10.17.
  */
 
-$(document).ready(function () {
+$(function () {
 	"use strict";
 /*
 	Slick-Slider-Plugin - http://kenwheeler.github.io/slick

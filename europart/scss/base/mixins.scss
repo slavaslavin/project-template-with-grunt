@@ -7,3 +7,16 @@
 		}
 	}
 }
+
+@mixin link-text-none() {
+	span,
+	.text {
+		display: none;
+	}
+	.icon {
+		&:before,
+		&:after {
+			margin: 0;
+		}
+	}
+}

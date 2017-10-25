@@ -1,7 +1,7 @@
 /**
  * Created by Alexej Schwarz on 06.10.17.
  */
-$(document).ready(function () {
+$(function () {
 	"use strict";
 
 	if($("#footerMenuAccordion a[data-toggle='collapse']").length > 0) {

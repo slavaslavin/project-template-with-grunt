@@ -22,9 +22,7 @@
 		@extend .fa-shopping-cart;
 	}
 	&_power {
-		&:after {
-			content: "\f011";
-		}
+		@extend .fa-power-off;
 	}
 	&_list {
 		@extend .fa-list-alt;
@@ -32,7 +30,7 @@
 	&_search {
 		@extend .fa-search;
 	}
-	&-close {
+	&_close {
 		@extend .fa-times;
 	}
 

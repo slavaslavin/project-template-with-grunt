@@ -2,11 +2,39 @@
 	&:hover {
 		text-decoration: none;
 	}
-	&-white {
+	&_white {
 		color: $white;
 		&:hover,
 		&focus {
 			color: $gray-200;
+		}
+	}
+
+	&_icon {
+		&-only {
+			&_mobil {
+				@include media-breakpoint-down(xs) {
+					@include link-text-none();
+				}
+			}
+			&_mobil-tablet {
+				@include media-breakpoint-down(sm) {
+					@include link-text-none();
+				}
+			}
+			&_tablet-landscape {
+				@include media-breakpoint-only(sm) {
+					@include link-text-none();
+				}
+				@include media-breakpoint-only(md) {
+					@include link-text-none();
+				}
+			}
+			&_tablet {
+				@include media-breakpoint-only(sm) {
+					@include link-text-none();
+				}
+			}
 		}
 	}
 }

@@ -16,9 +16,45 @@
 	&-advanced {
 		display: flex;
 		align-items: center;
+
+		&__link {
+			@extend .link;
+			@extend .link_white;
+			@extend .link_icon-only_mobil-tablet;
+		}
 	}
 
+	// Bootstrap
 	.input-group {
 		padding: .5em 0;
+		&-btn {
+			> .btn {
+				border-left: none;
+				color: $link-color;
+			}
+			&:not(:first-child) {
+				> .btn {
+					&:hover,
+					&:focus {
+						//background-color: $input-bg;
+						color: $link-hover-color;
+						//border-color: $input-border-color;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+	// Bootstrap
+	.form-control {
+		border-right: none;
+		&:focus {
+			+ .input-group-btn {
+				> .btn {
+					border-color: #2b9eff;
+				}
+			}
+		}
 	}
 }

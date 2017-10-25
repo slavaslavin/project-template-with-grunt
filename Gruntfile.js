@@ -166,7 +166,7 @@ module.exports = function (grunt) {
 					'node_modules/bootstrap/dist/js/bootstrap.js',
 					'node_modules/slick-carousel/slick/slick.js',
 
-					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/custom-test.js'
+					'<%= pkg.name %>/<%= pkg.jsDir %>/vendor/custom.js'
 
 				],
 				dest: '<%= pkg.name %>/<%= pkg.jsDir %>/dist/vendor.js'
@@ -215,6 +215,7 @@ module.exports = function (grunt) {
 				//tasks: ['less:dev', 'autoprefixer', 'cssmin', 'jshint', 'concat:dist', 'concat:vendor', 'ngAnnotate', 'uglify'],
 				// für SASS grunt.loadNpmTasks('grunt-contrib-sass')
 				tasks: ['sass:dev', 'autoprefixer', 'cssmin', 'jshint', 'concat:dist', 'concat:vendor', 'ngAnnotate', 'uglify'],
+				// tasks: ['jshint', 'concat:dist', 'ngAnnotate', 'uglify'],
 
 				options: {nospawn: true}
 			}

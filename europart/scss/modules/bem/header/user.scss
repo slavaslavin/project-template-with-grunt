@@ -1,0 +1,24 @@
+.header {
+	&-user {
+		border-top: 2px solid white;
+		width: 100%;
+		@include nav-links-mobil();
+		@include media-breakpoint-up(sm) {
+			width: auto;
+			border-top: none;
+			display: flex;
+			align-items: center;
+			&.collapse {
+				//display: inherit;
+			}
+		}
+		&__badge {
+			position: static;
+			@include media-breakpoint-up(sm) {
+				position: absolute;
+				top: -.7em;
+				left: .7em;
+			}
+		}
+	}
+}

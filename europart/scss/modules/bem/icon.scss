@@ -5,15 +5,17 @@
 	&:before,
 	&:after {
 		@extend .fa;
-	}
-	&:before {
+		margin-left: .5rem;
 		margin-right: .5rem;
 	}
+	&:before {
+		//margin-right: .5rem;
+	}
 	&:after {
-		margin-left: .5rem;
+		//margin-left: .5rem;
 	}
 	&_link {
-		@extend .fa-chevron-right;
+		@extend .fa-angle-right
 	}
 	&_cog {
 		@extend .fa-cog;
@@ -36,5 +38,8 @@
 
 	&_large {
 		font-size: 1.6rem;
+	}
+	&_small {
+		font-size: .6rem;
 	}
 }

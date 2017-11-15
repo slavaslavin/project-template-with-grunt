@@ -1,32 +1,21 @@
 .header-search {
 	position: relative;
 	z-index: $z-index-wide-2;
-
 	@extend .bg-primary;
 	@include media-breakpoint-up(sm) {
 		display: flex;
 		align-items: center;
 	}
-
-	.icon {
-		@extend .icon_large;
-	}
-
-	&-input {
-
-	}
-
 	&-advanced {
 		display: flex;
 		align-items: center;
-
-		&__link {
-			@extend .link;
-			@extend .link_white;
-			@extend .link_icon-only_mobil-tablet;
+		&__flex {
+			@include media-breakpoint-up(sm) {
+				display: flex;
+				align-items: center;
+			}
 		}
 	}
-
 	// Bootstrap
 	.input-group {
 		padding: .5em 0;
@@ -48,7 +37,6 @@
 			}
 		}
 	}
-
 	// Bootstrap
 	.form-control {
 		border-right: none;

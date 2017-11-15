@@ -1,0 +1,10 @@
+.badge {
+	margin-left: .5rem;
+	margin-right: .5rem;
+	&-wrap {
+		position: relative;
+		&__inner {
+			position: absolute;
+		}
+	}
+}

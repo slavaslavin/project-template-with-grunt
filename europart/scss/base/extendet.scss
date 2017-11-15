@@ -1,0 +1,29 @@
+.ext {
+	&-icon {
+		&-only {
+			&_mobil {
+				@include media-breakpoint-down(xs) {
+					@include link-text-none();
+				}
+				&-tablet {
+					@include media-breakpoint-down(sm) {
+						@include link-text-none();
+					}
+				}
+			}
+			&_tablet {
+				@include media-breakpoint-only(sm) {
+					@include link-text-none();
+				}
+				&-landscape {
+					@include media-breakpoint-only(sm) {
+						@include link-text-none();
+					}
+					@include media-breakpoint-only(md) {
+						@include link-text-none();
+					}
+				}
+			}
+		}
+	}
+}

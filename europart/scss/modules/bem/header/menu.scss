@@ -2,16 +2,22 @@
 	@extend .bg-yellow;
 	@extend .navbar-expand-sm;
 	border-bottom: 2px solid $white;
-
-	.icon {
-		@extend .icon_large;
-	}
-
 	.navbar {
 		padding-top: 0;
 		padding-bottom: 0;
+		&-nav {
+			.nav-link {
+				@include media-breakpoint-only(sm) {
+					padding-left: .8rem;
+					padding-right: .8rem;
+				}
+				@include media-breakpoint-only(md) {
+					padding-left: .5rem;
+					padding-right: .5rem;
+				}
+			}
+		}
 	}
-
 	.nav-item {
 		@include nav-links-mobil();
 		@include media-breakpoint-up(sm) {
@@ -22,7 +28,6 @@
 			}
 		}
 	}
-
 	.dropdown-menu {
 		@include media-breakpoint-down(xs) {
 			font-size: 1rem;
@@ -32,6 +37,4 @@
 			border-radius: 0;
 		}
 	}
-
-
 }

@@ -31,34 +31,35 @@ $theme-colors: (
 	"white": $white
 );
 
-//$body-color:    $gray-900 !default;
-
 // Navbar
-
-
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $navbar-light-color:                $brand-primary;
-//$navbar-light-hover-color:          rgba($black,.7) !default;
-//$navbar-light-active-color:         rgba($black,.9) !default;
-//$navbar-light-disabled-color:       rgba($black,.3) !default;
+$navbar-light-hover-color:          $white;
+$navbar-light-active-color:         $white;
 
+// Badges
+$badge-color:                 $navbar-light-color;
+$badge-font-size:             85%;
+//$badge-font-weight:           $font-weight-bold !default;
+$badge-padding-y:             .4em;
+$badge-padding-x:             .6em;
+
+//$badge-pill-padding-x:        .6em !default;
+// Use a higher than normal value to ensure completely rounded edges when
+// customizing padding or font-size on labels.
+//$badge-pill-border-radius:    10rem !default;
+
+//$navbar-light-disabled-color:       rgba($black,.3) !default;
 $navbar-light-toggler-border-color: $brand-primary;
 
 // Navbar Links Color
 $navbar-default-link-color: $brand-primary;
 
-// Fonts
-//$font-family-base: $font-family-sans-serif;
-
-// Z-index master list
+// Dropdowns
 //
-// Warning: Avoid customizing these values. They're used for a bird's eye view
-// of components dependent on the z-axis and are designed to all work together.
-//$zindex-dropdown:           1000 !default;
-//$zindex-sticky:             1020 !default;
-//$zindex-fixed:              1030 !default;
-//$zindex-modal-backdrop:     1040 !default;
-//$zindex-modal:              1050 !default;
-//$zindex-popover:            1060 !default;
-//$zindex-tooltip:            1070 !default;
-
+// Dropdown menu container and contents.
+$dropdown-link-color:            $brand-primary;
+$dropdown-link-hover-color:      $white;
+$dropdown-link-hover-bg:         $brand-primary;
+$dropdown-link-active-color:     $white;
+$dropdown-link-active-bg:        $brand-primary;

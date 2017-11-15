@@ -3,31 +3,43 @@
  */
 
 .slick {
-
 	&-arrow {
+		$arrow-size: 3rem;
 		position: absolute;
-		top: 35%;
+		top: 50%;
+		margin-top: -$arrow-size;
 		z-index: 100;
-
+		color: transparent;
+		font-size: 0;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		&:before,
+		&:after {
+			@extend .fa;
+			color: $link-color;
+			font-size: $arrow-size;
+			opacity: .5;
+			font-weight: normal;
+		}
+		&:hover,
+		&:focus {
+			&:before,
+			&:after {
+				opacity: 1;
+			}
+		}
 		&.slick-next {
-			right: 0;
+			right: -6%;
+			//margin-right: .5*$grid-gutter-width;
+			@extend .fa-chevron-right;
 		}
 		&.slick-prev {
-			left: 0;
-		}
-
-		/*width: 2em;
-		height: 2em;
-		overflow: hidden;*/
-
-		&_large {
-
-		}
-		&_small {
-
+			left: -6%;
+			//margin-left: .5*$grid-gutter-width;
+			@extend .fa-chevron-left;
 		}
 	}
-
 	&-dots {
 		position: absolute;
 		margin: 0;

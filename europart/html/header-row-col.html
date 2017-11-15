@@ -16,10 +16,8 @@
 
         <header class="header">
             <div id="headerMeta" class="header-meta collapse">
-
-                <div class="container-header-meta">
+                <div class="container">
                     <div class="row">
-
                         <div class="col-header-meta">
                             <span>Nächstgelegene Filiale zum jetzigen Standort: </span>
                             <a href=""><span id="branchData">Nicht ermittelbar</span></a>
@@ -31,23 +29,20 @@
                                 <span class="textOtherStore">Andere Filiale suchen</span>
                             </a>
 
-                            <a class="linke"
+                            <a class="link"
                                     aria-label="Close"
                                     href="#headerMeta"
                                     data-toggle="collapse">
                                 <i class="icon icon_close" aria-hidden="true"></i>
                             </a>
                         </div>
-
                     </div>
                 </div>
-
             </div>
 
             <div class="header-top">
-                <div class="container-header-top">
+                <div class="container">
                     <div class="row">
-
                         <nav class="navbar col-header-logo navbar-light">
                             <a class="navbar-brand header-logo" href="#">
                                 <img src="../images/logo.png" class="d-inline-block align-top header-logo__img" alt="">
@@ -67,104 +62,154 @@
                         </nav>
 
                         <div class="col-header-user header-user collapse">
-                            <a href="#" class="link link_icon-only_tablet-landscape">
-                                <i class="icon icon_list" aria-hidden="true"></i>
-                                <span>Meine Listen</span>
+                            <a href="#" class="link link_text-none-sm-md badge-wrap">
+                                <i class="icon icon_list icon_large" aria-hidden="true"></i>
+                                <span class="badge header-user__badge">0</span>
+                                <span class="link__text">Meine Listen</span>
                             </a>
                         </div>
 
                         <div class="col-header-user header-user collapse">
-                            <a href="#" class="link link_icon-only_tablet-landscape">
-                                <i class="icon icon_cart" aria-hidden="true"></i>
-                                <span>Warenkorb</span>
+                            <a href="#" class="link link_text-none-sm-md badge-wrap">
+                                <i class="icon icon_cart icon_large" aria-hidden="true"></i>
+                                <span class="badge header-user__badge">0</span>
+                                <span class="link__text">Warenkorb</span>
                             </a>
                         </div>
-
                     </div>
                 </div>
             </div>
 
             <div id="headerMenu" class="header-menu collapse">
-                <div class="wide-submenu container-header-menu">
+                <div class="subnav-wrap container">
                     <div class="row-header-menu">
 
                         <div class="col-header-login header-login">
-                            <a href="#" class="link header-login__link">
-                                <i class="icon icon_power" aria-hidden="true"></i>
-                                <span>Willkommen Herr Musterman</span>
+                            <a href="#" class="link link_text-none-sm header-login__flex">
+                                <i class="icon icon_power icon_large" aria-hidden="true"></i>
+                                <span class="link__text">Willkommen Herr Musterman</span>
                             </a>
                         </div>
 
-                        <!--<div class="col-header-menu">-->
-
-                        <nav class="navbar col-header-navbar">
+                        <nav class="navbar navbar-light col-header-navbar">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link"
                                        href="#"
-                                       id="headerMenuItem1"
                                        role="button"
-                                       data-toggle="dropdown"
-                                       aria-haspopup="true"
-                                       aria-expanded="true">
+                                       data-toggle="dropdown">
                                         Artikel finden
                                     </a>
-                                    <div class="dropdown-menu"
-                                         aria-labelledby="headerMenuItem1">
 
-                                        <a href="#"  class="close">x</a>
-
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-menu subnav">
+                                        <div class="row-subnav">
+                                            <!-- <a href="#" class="">
+                                                <i class="icon icon_close icon_large" aria-hidden="true"></i>
+                                            </a> -->
+                                            <a href="#" class="col-wide-dropdown dropdown-item">
+                                                <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                <span>Action</span>
+                                            </a>
+                                            <a href="#" class="col-wide-dropdown dropdown-item">
+                                                <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                <span>Another action</span>
+                                            </a>
+                                            <a href="#" class="col-wide-dropdown dropdown-item">
+                                                <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                <span>Something else here</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </li>
 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link"
                                        href="#"
-                                       id="headerMenuItem2"
                                        role="button"
-                                       data-toggle="dropdown"
-                                       aria-haspopup="true"
-                                       aria-expanded="false">
+                                       data-toggle="dropdown">
                                         bestellen
                                     </a>
-                                    <div class="dropdown-menu"
-                                         aria-labelledby="headerMenuItem2">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
+
+                                    <div class="dropdown-menu subnav">
+                                        <div class="row-subnav">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <a class="col-wide-dropdown dropdown-item" href="#">
+                                                        <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                        <span>Schnellerfassung</span>
+                                                    </a>
+                                                    <a class="col-wide-dropdown dropdown-item" href="#">
+                                                        <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                        <span>Bestelldatei hochladen</span>
+                                                    </a>
+                                                    <a class="col-wide-dropdown dropdown-item" href="#">
+                                                        <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                        <span>Systemregal</span>
+                                                    </a>
+                                                    <a class="col-wide-dropdown dropdown-item" href="#">
+                                                        <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                        <span>Warenkorb</span>
+                                                    </a>
+                                                    <a class="col-wide-dropdown dropdown-item" href="#">
+                                                        <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                        <span>Meine Listen</span>
+                                                    </a>
+                                                    <a class="col-wide-dropdown dropdown-item" href="#">
+                                                        <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                        <span>Meine Filiale</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-side wide-dropdown__side">
+                                                <div class="row">
+                                                    <div class="col" style="background-color: red">
+                                                        Sidebar
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link"
-                                       href="#" id="headerMenuItem3"
+                                       href="#"
                                        role="button"
-                                       data-toggle="dropdown"
-                                       aria-haspopup="true"
-                                       aria-expanded="false">
+                                       data-toggle="dropdown">
                                         mein EWOS
                                     </a>
-                                    <div class="dropdown-menu"
-                                         aria-labelledby="headerMenuItem3">
-                                        <a class="dropdown-item" href="#">EWOS</a>
-                                        <a class="dropdown-item" href="#">Filiale</a>
-                                        <a class="dropdown-item" href="#">Lieferwervice</a>
-                                        <a class="dropdown-item" href="#">Hotline</a>
+
+                                    <div class="dropdown-menu subnav">
+                                        <div class="row-subnav">
+                                            <a class="dropdown-item" href="#">
+                                                <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                <span>EWOS</span>
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                <span>Filiale</span>
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                <span>Lieferwervice</span>
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="icon icon_link icon_small" aria-hidden="true"></i>
+                                                <span>Hotline</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
                         </nav>
 
-                        <!--</div>-->
                     </div>
                 </div>
             </div>
 
             <div id="headerSearch" class="header-search collapse">
-                <div class="container-header-search">
+                <div class="container">
                     <div class="row">
                         <div class="header-search-input col">
 
@@ -177,7 +222,7 @@
                                     <span class="input-group-btn">
                                         <button class="btn btn-white"
                                                 type="submit">
-                                            <i class="icon icon_search" aria-hidden="true"></i>
+                                            <i class="icon icon_search icon_large" aria-hidden="true"></i>
                                             <span class="sr-only">Suche</span>
                                         </button>
                                     </span>
@@ -187,9 +232,9 @@
                         </div>
 
                         <div class="header-search-advanced col-auto">
-                            <a href="#" class="header-search-advanced__link">
-                                <i class="icon icon_cog" aria-hidden="true"></i>
-                                <span>Erweiterte Suche</span>
+                            <a href="#" class="link link_white link_text-none-xs-sm">
+                                <i class="icon icon_cog icon_large" aria-hidden="true"></i>
+                                <span class="link__text">Erweiterte Suche</span>
                             </a>
                         </div>
 
@@ -199,14 +244,12 @@
         </header>
 
         <main class="main">
-            <div class="container-main">
-
+            <div class="container">
                 <div class="row modul">
-                    <!-- Slick Carousel -->
-                    <div class="col slider">
-                        <div class="slider_js">
-                            <div class="col slide">
-
+                    <div class="col-slider">
+                        <!-- Slick Carousel -->
+                        <div class="slider slider_js">
+                            <div class="slider__item">
                                 <div class="card">
                                     <img class="card-img-top" src="../images/noimage_pressrelease.png"
                                          alt="Card image cap">
@@ -217,11 +260,8 @@
                                         <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
-
                             </div>
-
-                            <div class="col slide">
-
+                            <div class="slider__item">
                                 <div class="card">
                                     <img class="card-img-top" src="../images/epc-content_2.jpg"
                                          alt="Card image cap">
@@ -232,10 +272,8 @@
                                         <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col slide">
-
+                            <div class="slider__item">
                                 <div class="card">
                                     <img class="card-img-top" src="../images/epc-content.jpg"
                                          alt="Card image cap">
@@ -246,10 +284,8 @@
                                         <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col slide">
-
+                            <div class="slider__item">
                                 <div class="card">
                                     <img class="card-img-top" src="../images/chess-2730034_1280.jpg"
                                          alt="Card image cap">
@@ -260,158 +296,135 @@
                                         <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
+                        <!-- Slick Carousel END -->
                     </div>
-                    <!-- Slick Carousel END -->
                 </div>
 
-                <div class="row modul">
-                    <!-- Slick Carousel -->
-                    <div class="col slider">
-
-                        <div class="row bar slider__bar">
-                            <h2 class="h2 col-tittle">EWOS Aktuel</h2>
-                            <a href="#" class="col-link link-icon">Alle anzeigen</a>
-                        </div>
-
-                        <div class="slider_js">
-                            <div class="col slide">
-
-                                <div class="card">
-                                    <img class="card-img-top" src="../images/chess-140340_1280.jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col slide">
-
-                                <div class="card">
-                                    <img class="card-img-top" src="../images/the-strategy-1080528_1280.jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col slide">
-
-                                <div class="card">
-                                    <img class="card-img-top" src="../images/chess-603624_1280.jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col slide">
-
-                                <div class="card">
-                                    <img class="card-img-top" src="../images/chess-2730034_1280.jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slick Carousel END -->
-                </div>
-
-                <div class="row modul">
-                    <!-- Slick Carousel -->
-                    <div class="col slider">
-
-                        <div class="row bar slider__bar">
-                            <h2 class="h2 col-tittle">Headline angezeigte Teaser</h2>
-                            <div class="col-content">
+                <div class="modul">
+                    <div class="row">
+                        <div class="col-slider">
+                            <div class="bar bar__slider">
+                                <a class="h2 title">EWOS aktuel</a>
                                 <a href="#">Sonderangebote</a>
                                 <a href="#">Neu im Sortiment</a>
+                                <a href="#" class="link-icon right">Alle anzeigen</a>
                             </div>
-                        </div>
 
-                        <div class="slider_js">
-                            <div class="col slide">
-
-                                <div class="card">
-                                    <img class="card-img-top" src="../images/chess-140340_1280.jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <!-- Slick Carousel -->
+                            <div class="slider slider_js">
+                                <div class="slider__item">
+                                    <div class="card">
+                                        <img class="card-img-top" src="../images/noimage_pressrelease.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
                                     </div>
                                 </div>
-
-                            </div>
-
-                            <div class="col slide">
-
-                                <div class="card">
-                                    <img class="card-img-top" src="../images/the-strategy-1080528_1280.jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="slider__item">
+                                    <div class="card">
+                                        <img class="card-img-top" src="../images/epc-content_2.jpg"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
                                     </div>
                                 </div>
-
-                            </div>
-                            <div class="col slide">
-
-                                <div class="card">
-                                    <img class="card-img-top" src="../images/chess-603624_1280.jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="slider__item">
+                                    <div class="card">
+                                        <img class="card-img-top" src="../images/epc-content.jpg"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
                                     </div>
                                 </div>
-
-                            </div>
-                            <div class="col slide">
-
-                                <div class="card">
-                                    <img class="card-img-top" src="../images/chess-2730034_1280.jpg"
-                                         alt="Card image cap">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Card title</h4>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="slider__item">
+                                    <div class="card">
+                                        <img class="card-img-top" src="../images/chess-2730034_1280.jpg"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
+                            <!-- Slick Carousel END -->
                         </div>
                     </div>
-                    <!-- Slick Carousel END -->
+                </div>
+
+                <div class="modul">
+                    <div class="row">
+                        <div class="col-slider">
+                            <!-- Slick Carousel -->
+                            <div class="slider slider_js">
+                                <div class="slider__item">
+                                    <div class="card">
+                                        <img class="card-img-top" src="../images/noimage_pressrelease.png"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="card">
+                                        <img class="card-img-top" src="../images/epc-content_2.jpg"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="card">
+                                        <img class="card-img-top" src="../images/epc-content.jpg"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="card">
+                                        <img class="card-img-top" src="../images/chess-2730034_1280.jpg"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slick Carousel END -->
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row modul">
@@ -472,14 +485,12 @@
                         </p>
                     </div>
                 </div>
-
             </div>
-
         </main>
 
         <footer class="footer">
             <div class="footer-menu">
-                <div class="container-footer-menu">
+                <div class="container">
                     <div class="row-footer-menu">
 
                         <nav class="navbar">
@@ -507,7 +518,7 @@
             </div>
 
             <div class="footer-line">
-                <div class="container-footer-line">
+                <div class="container">
                     <div class="row">
                         <div class="col-footer-line"><a href="#">Verkauf nur an widerverkäufer und gewerbliche Verbraucher</a></div>
                         <div class="col-footer-line text-right"><a href="#">&reg; EWOS - EUROPART Werkstatt-Online-System</a></div>
@@ -515,7 +526,7 @@
                 </div>
             </div>
             <div class="footer-description">
-                <div class="container-footer-description">
+                <div class="container">
                     <div class="row">
                         <p class="">
                             magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores

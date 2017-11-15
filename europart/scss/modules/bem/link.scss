@@ -9,32 +9,34 @@
 			color: $gray-200;
 		}
 	}
+	&-icon {
+		@extend .fa-angle-right;
+		&:before {
+			@extend .fa;
+			margin-right: 6px;
+		}
+	}
+	&__text {
 
-	&_icon {
-		&-only {
-			&_mobil {
-				@include media-breakpoint-down(xs) {
-					@include link-text-none();
-				}
+	}
+}
+
+[class*="link_text-none-"] {
+	&[class*="-xs"] {
+		@include media-breakpoint-down(xs) {
+			@include link-text-none();
+		}
+	}
+	@each $breakpoint in map-keys($grid-breakpoints) {
+		&[class*="-#{$breakpoint}"] {
+			@include media-breakpoint-only(#{$breakpoint}) {
+				@include link-text-none();
 			}
-			&_mobil-tablet {
-				@include media-breakpoint-down(sm) {
-					@include link-text-none();
-				}
-			}
-			&_tablet-landscape {
-				@include media-breakpoint-only(sm) {
-					@include link-text-none();
-				}
-				@include media-breakpoint-only(md) {
-					@include link-text-none();
-				}
-			}
-			&_tablet {
-				@include media-breakpoint-only(sm) {
-					@include link-text-none();
-				}
-			}
+		}
+	}
+	&[class*="-xl"] {
+		@include media-breakpoint-up(xl) {
+			@include link-text-none();
 		}
 	}
 }

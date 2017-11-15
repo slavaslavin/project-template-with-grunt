@@ -9,21 +9,22 @@
 }
 
 @mixin link-text-none() {
-	span,
-	.text {
-		display: none;
+	.text,
+	.link__text {
+		@include invisible(hidden);
+		font-size: 0;
 	}
-	.icon {
-		&:before,
-		&:after {
-			margin: 0;
-		}
+	.badge,
+	.icon:before,
+	.icon:after {
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 
 @mixin compensation-left-right($compensation: $grid-gutter-width) {
-		margin: 0 (-$compensation / 2);
-		padding: 0 $compensation / 2;
+	margin: 0 (-$compensation / 2);
+	padding: 0 $compensation / 2;
 }
 
 @mixin compensation-left-right-mobil($compensation: $grid-gutter-width) {

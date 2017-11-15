@@ -1,6 +1,8 @@
 .header {
 	font-size: 1.1rem;
-
+	@include media-breakpoint-only(md) {
+		font-size: 1rem;
+	}
 	&-logo {
 		&__img {
 			height: 30px;
@@ -15,47 +17,6 @@
 			}
 		}
 	}
-
-	&-user {
-		border-top: 2px solid white;
-		width: 100%;
-		@include nav-links-mobil();
-		@include media-breakpoint-up(sm) {
-			width: auto;
-			border-top: none;
-			display: flex;
-			align-items: center;
-			&.collapse {
-				//display: inherit;
-			}
-		}
-	}
-
-	&-login {
-		border-bottom: 2px solid white;
-		@include nav-links-mobil();
-		@include media-breakpoint-up(sm) {
-			display: flex;
-			align-items: center;
-			border-bottom: none;
-		}
-
-		&__link {
-			@include media-breakpoint-up(sm) {
-				display: flex;
-				align-items: center;
-				flex-direction: row-reverse;
-				.icon {
-					&:before {
-						margin-right: 0;
-						margin-left: .5rem;
-					}
-				}
-			}
-			@extend .link_icon-only_tablet;
-		}
-	}
-
 	@include media-breakpoint-up(sm) {
 		.navbar {
 			justify-content: flex-start;
@@ -65,4 +26,3 @@
 		}
 	}
 }
-

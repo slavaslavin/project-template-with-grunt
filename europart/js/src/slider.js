@@ -4,16 +4,10 @@
 
 $(function () {
 	"use strict";
-/*
-	Slick-Slider-Plugin - http://kenwheeler.github.io/slick
-	<div data-control-class="stage" class="slider single-item"...
-
-	alle Elemente mit der Klasse "slider" werden als Slick-Slider initialisert
-    data-control-class steuert die Slick-Plugin-Parameter
- */
+	/* Slick-Slider-Plugin - http://kenwheeler.github.io/slick */
 
 	var sliderClass= "slider_js",
-		$sliders = $("[class^='" + sliderClass + "']");
+		$sliders = $("[class*='" + sliderClass + "']");
 
 	if ($sliders.length > 0) {
 

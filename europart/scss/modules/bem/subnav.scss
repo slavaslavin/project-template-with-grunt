@@ -1,0 +1,45 @@
+.subnav {
+	@include media-breakpoint-down(xs) {
+		margin-top: 0;
+	}
+	@include media-breakpoint-up(sm) {
+		position: absolute !important;
+		z-index: $zindex-dropdown;
+		left: 0;
+		right: 0;
+		background-color: $white;
+		border: none;
+		border-radius: 0;
+		box-shadow: 0 2000px 0 2000px rgba(0, 0, 0, .475);
+		padding-left: $grid-gutter-width / 2;
+		padding-right: $grid-gutter-width / 2;
+		&.show {
+			display: inherit;
+		}
+	}
+
+	&-wrap {
+		@include media-breakpoint-up(sm) {
+			position: relative;
+
+			.dropdown,
+			.navbar,
+			.col,
+			[class*="col-"] {
+				position: static !important;
+			}
+		}
+	}
+
+	&-list {
+
+	}
+
+	&-teaser {
+
+	}
+
+	&-side {
+
+	}
+}

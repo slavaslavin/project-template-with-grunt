@@ -6,7 +6,7 @@ $(function () {
 	"use strict";
 	/* Slick-Slider-Plugin - http://kenwheeler.github.io/slick */
 
-	var sliderClass= "slider_js",
+	var sliderClass= "slider__js",
 		$sliders = $("[class*='" + sliderClass + "']");
 
 	if ($sliders.length > 0) {

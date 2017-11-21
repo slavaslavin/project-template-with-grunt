@@ -30,4 +30,17 @@
 	&__item {
 		padding: 0 $grid-gutter-width/6;
 	}
+	&_top {
+		// Bootstrap
+		.card {
+			&-img {
+				&-top {
+					border: 1px solid $card-border-color;
+				}
+			}
+			&-title {
+				margin-bottom: 3*$card-spacer-y;
+			}
+		}
+	}
 }

@@ -45,12 +45,9 @@
 			max-width: 100%;
 		}
 	}
-	&-modul {
-		@include make-col-ready();
-	}
 	&-slider {
+		@include make-col-ready();
 		@include media-breakpoint-up(xs) {
-			@include make-col-ready();
 			@include make-col(12);
 		}
 		@include media-breakpoint-up(md) {
@@ -65,7 +62,6 @@
 			@include media-breakpoint-up(xs) {
 				@include make-col(12);
 			}
-
 			@include media-breakpoint-up(md) {
 				@include make-col(6);
 			}

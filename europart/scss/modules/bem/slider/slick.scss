@@ -4,7 +4,7 @@
 
 .slick {
 	&-arrow {
-		$arrow-size: 3rem;
+		$arrow-size: 6rem;
 		position: absolute;
 		top: 50%;
 		margin-top: -$arrow-size;
@@ -32,12 +32,12 @@
 		&.slick-next {
 			right: -6%;
 			//margin-right: .5*$grid-gutter-width;
-			@extend .fa-chevron-right;
+			@extend .fa-angle-right;
 		}
 		&.slick-prev {
 			left: -6%;
 			//margin-left: .5*$grid-gutter-width;
-			@extend .fa-chevron-left;
+			@extend .fa-angle-left;
 		}
 	}
 	&-dots {

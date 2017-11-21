@@ -1,0 +1,15 @@
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+	.btn-#{$color} {
+		@include button-variant($value, $brand-primary);
+	}
+}
+
+.btn {
+	&-white {
+		color: $brand-primary;
+	}
+}

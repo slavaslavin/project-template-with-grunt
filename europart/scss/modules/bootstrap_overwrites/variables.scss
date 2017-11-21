@@ -5,6 +5,7 @@ $brand-primary:             #005caa;
 $navbar-default-bg:         #f9ca3a;
 
 // Colors
+
 $black:                     #000;
 $white:                     #fff;
 $red:                       #ff0000;
@@ -67,9 +68,9 @@ $body-color:    $gray-700;
 //
 //$headings-margin-bottom: ($spacer / 2) !default;
 //$headings-font-family:   inherit !default;
-//$headings-font-weight:   500 !default;
+$headings-font-weight:   bold;
 //$headings-line-height:   1.1 !default;
-//$headings-color:         inherit !default;
+$headings-color:         $brand-primary;
 //
 //$display1-size: 6rem !default;
 //$display2-size: 5.5rem !default;

@@ -6,6 +6,24 @@
 		}
 	}
 
+	&-col {
+		&-title {
+			@include make-col-ready();
+			@include media-breakpoint-up(xs) {
+				@include make-col(12);
+			}
+			@include media-breakpoint-up(md) {
+				// .col-auto
+				flex: 0 0 auto;
+				width: auto;
+				max-width: none;
+			}
+			@include media-breakpoint-up(lg) {
+
+			}
+		}
+	}
+
 	.col {
 		&-tittle {
 			@include make-col-ready();

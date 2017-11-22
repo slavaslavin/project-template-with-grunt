@@ -14,6 +14,11 @@
 			margin: .5rem 20%;
 		}
 	}
+	&__wrap {
+		&_img {
+			height: 220px;
+		}
+	}
 	&_overlay {
 		cursor: pointer;
 		&:hover,

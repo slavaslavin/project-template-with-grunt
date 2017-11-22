@@ -81,4 +81,34 @@
 			}
 		}
 	}
+	// setzt die Slider-Sequenzen auf die gleiche Höhe
+	&_flex {
+		&_slick {
+			// überschreibt Slick-Plugin-Einstellungen
+			.slick {
+				&-list,
+				&-track {
+					display: flex;
+				}
+				&-slide {
+					display: flex !important;
+					> * {
+						display: flex;
+						width: 100%;
+						> * {
+							display: flex !important;
+						}
+					}
+				}
+			}
+			.card {
+				width: 100%
+			//	&-body {
+			//		display: flex;
+			//		flex-direction: column;
+			//		justify-content: space-between;
+			//	}
+			}
+		}
+	}
 }

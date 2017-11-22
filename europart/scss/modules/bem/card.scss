@@ -16,12 +16,17 @@
 	}
 	&__wrap {
 		&_img {
-			height: 220px;
+			height: 230px;
+			overflow: hidden;
 		}
 	}
 	&__logo {
 		display: block;
 		margin-bottom: $card-spacer-y;
+		width: 40%;
+		img {
+			max-width: 100%;
+		}
 	}
 	&_overlay {
 		cursor: pointer;

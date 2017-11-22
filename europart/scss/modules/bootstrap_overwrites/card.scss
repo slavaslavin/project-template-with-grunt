@@ -2,4 +2,8 @@
 	&-title {
 		//font-size: $h3-font-size;
 	}
+	p,
+	&-text {
+		margin-bottom: .5*$card-spacer-y;
+	}
 }

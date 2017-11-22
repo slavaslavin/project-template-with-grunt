@@ -125,12 +125,6 @@ $badge-padding-x:             .6em;
 // customizing padding or font-size on labels.
 //$badge-pill-border-radius:    10rem !default;
 
-//$navbar-light-disabled-color:       rgba($black,.3) !default;
-$navbar-light-toggler-border-color: $brand-primary;
-
-// Navbar Links Color
-$navbar-default-link-color: $brand-primary;
-
 // Dropdowns
 //
 // Dropdown menu container and contents.
@@ -139,3 +133,28 @@ $dropdown-link-hover-color:      $white;
 $dropdown-link-hover-bg:         $brand-primary;
 $dropdown-link-active-color:     $white;
 $dropdown-link-active-bg:        $brand-primary;
+
+//$navbar-light-disabled-color:       rgba($black,.3) !default;
+$navbar-light-toggler-border-color: $brand-primary;
+
+// Navbar Links Color
+$navbar-default-link-color: $brand-primary;
+
+// Cards
+
+//$card-spacer-y:            .75rem !default;
+//$card-spacer-x:            1.25rem !default;
+//$card-border-width:        1px !default;
+//$card-border-radius:       $border-radius !default;
+//$card-border-color:        rgba($black,.125) !default;
+//$card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width}) !default;
+$card-cap-bg:              inherit;
+//$card-bg:                  $white !default;
+//
+//$card-img-overlay-padding: 1.25rem !default;
+//
+//$card-deck-margin:          ($grid-gutter-width / 2) !default;
+//
+//$card-columns-count:        3 !default;
+//$card-columns-gap:          1.25rem !default;
+//$card-columns-margin:       $card-spacer-y !default;

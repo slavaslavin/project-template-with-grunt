@@ -22,6 +22,12 @@
 	}
 	&_cart {
 		@extend .fa-shopping-cart;
+		&-plus {
+			@extend .fa-cart-plus;
+		}
+	}
+	&_pdf {
+		@extend .fa-file-pdf-o;
 	}
 	&_power {
 		@extend .fa-power-off;
@@ -29,17 +35,28 @@
 	&_list {
 		@extend .fa-list-alt;
 	}
+	&_on-my-list {
+		@extend .fa-clone;
+	}
 	&_search {
 		@extend .fa-search;
 	}
 	&_close {
 		@extend .fa-times;
 	}
-
 	&_large {
 		font-size: 1.6rem;
 	}
 	&_small {
 		font-size: .6rem;
+	}
+
+	&.btn {
+		&:before {
+			margin-left: 0;
+		}
+		&:after {
+			margin-right: 0;
+		}
 	}
 }

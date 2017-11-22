@@ -1,17 +1,17 @@
 .slider {
-	&__header,
-	&__footer {
-		padding:  0 $grid-gutter-width/6;
+	&__header {
+		padding:  0 $grid-gutter-width/6 .5*$spacer $grid-gutter-width/6;
 		display: flex;
 		align-items: baseline;
 		justify-content: flex-start;
 		flex-wrap: wrap;
 	}
-	&__header {
-		padding-bottom: .5*$spacer;
-	}
 	&__footer {
-		padding-top: .5*$spacer;
+		padding: .5*$spacer $grid-gutter-width/6 0 $grid-gutter-width/6;
+		display: flex;
+		align-items: baseline;
+		justify-content: flex-start;
+		flex-wrap: wrap;
 	}
 	&__title {
 		width: 100%;
@@ -24,10 +24,6 @@
 		}
 	}
 	&__block {
-		//margin: 0 (-.5*$spacer-x);
-		//display: flex;
-		//justify-content: space-between;
-		//flex-wrap: wrap;
 		width: 100%;
 		text-align: center;
 		@include media-breakpoint-up(md) {

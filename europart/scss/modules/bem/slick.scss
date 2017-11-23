@@ -30,12 +30,12 @@
 			}
 		}
 		&.slick-next {
-			right: -6%;
+			right: -1.5*$grid-gutter-width;
 			//margin-right: .5*$grid-gutter-width;
 			@extend .fa-angle-right;
 		}
 		&.slick-prev {
-			left: -6%;
+			left: -1.5*$grid-gutter-width;
 			//margin-left: .5*$grid-gutter-width;
 			@extend .fa-angle-left;
 		}
@@ -56,17 +56,15 @@
 		}
 		button {
 			border-radius: 50%;
-			border: 2px solid #2e6da4;
+			border: 2px solid $brand-primary;
 			width: 1.2em;
 			height: 1.2em;
-			background-color: white;
+			background-color: $white;
 			color: transparent;
 		}
 		.slick-active {
 			button {
-				border: 2px solid lightcoral;
-				width: 1.3em;
-				height: 1.3em;
+				background-color: $brand-primary;
 			}
 		}
 	}

@@ -1,6 +1,10 @@
 .link {
+	position: relative;
 	&:hover {
 		text-decoration: none;
+	}
+	&__badge {
+		position: relative;
 	}
 	&_white {
 		color: $white;

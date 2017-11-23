@@ -22,7 +22,7 @@ $(function () {
 
 					responsive: [
 						{
-							breakpoint: 1024,
+							breakpoint: window.btstrpBrckpnts.xl,
 							settings: {
 								slidesToShow: 3,
 								slidesToScroll: 1,
@@ -31,7 +31,7 @@ $(function () {
 							}
 						},
 						{
-							breakpoint: 992,
+							breakpoint: window.btstrpBrckpnts.lg,
 							settings: {
 								slidesToShow: 2,
 								slidesToScroll: 1,
@@ -40,7 +40,7 @@ $(function () {
 							}
 						},
 						{
-							breakpoint: 768,
+							breakpoint: window.btstrpBrckpnts.md,
 							settings: {
 								slidesToShow: 1,
 								slidesToScroll: 1,
@@ -49,26 +49,6 @@ $(function () {
 							}
 						}
 					]
-				},
-				"single": {
-					settingName: "setting-value",
-					//dots: true,
-					speed: slideTime,
-					//rtl: true,
-					infinite: true,
-					cssEase: "ease",
-					//variableWidth: true, // default false
-					//adaptiveHeight: true, // default false
-					//autoplay: true, // default false
-					//autoplaySpeed: 3000,
-
-				},
-				"fade": {
-					dots: true,
-					speed: slideTime,
-					infinite: true,
-					fade: true,
-					cssEase: "ease"
 				}
 			};
 

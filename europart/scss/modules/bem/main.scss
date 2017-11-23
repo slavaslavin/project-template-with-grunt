@@ -1,3 +1,60 @@
 .main {
+	position: relative;
+	&__sidebar {
+		position: absolute;
+		z-index: $zindex-sticky;
+		$direction-x: (
+			"left": left,
+			"right": right
+		);
+		@each $direction in map-keys($direction-x) {
+			&_#{$direction} {
+				top: 100px;
+				#{$direction}: 0;
+				.btn {
+					border-top-#{$direction}-radius: 0;
+					border-bottom-#{$direction}-radius: 0;
+				}
+			}
+		}
+		&_column {
+			.btn {
+				display: block;
+				margin-bottom: .5*$spacer;
+			}
+		}
+		.btn {
+			font-size: $h2-font-size;
+			&.icon {
+				&:before,
+				&:after {
+					margin: 0;
+				}
+				&_fast-tracking {
+					&:after {
+						font-size: .5*$h2-font-size;
+						background-color: inherit;
+						position: absolute;
+						right: 10px;
+						bottom: 10px;
+						padding: 3px;
+						border-radius: 50%;
+					}
+				}
+			}
+			&__badge {
+				padding-top: 2*$input-btn-padding-y;
+				padding-bottom: .5*$input-btn-padding-y;
 
+				padding-right: 1.5*$input-btn-padding-x;
+				padding-left: .75*$input-btn-padding-x;
+			}
+		}
+		.badge {
+			//font-size: .8*$badge-font-size;
+			@include badge(1.2*$badge-font-size);
+			margin: 0;
+			border: 1px solid $brand-primary;
+		}
+	}
 }

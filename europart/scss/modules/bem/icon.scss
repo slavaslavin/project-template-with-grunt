@@ -26,16 +26,28 @@
 			@extend .fa-cart-plus;
 		}
 	}
+	&_fast-tracking {
+		@extend .fa-list;
+		&:after {
+			content: "\f217";
+		}
+	}
 	&_pdf {
 		@extend .fa-file-pdf-o;
+	}
+	&_phone {
+		@extend .fa-phone;
 	}
 	&_power {
 		@extend .fa-power-off;
 	}
+	&_puzzle {
+		@extend .fa-puzzle-piece;
+	}
 	&_list {
 		@extend .fa-list-alt;
 	}
-	&_on-my-list {
+	&_my-list {
 		@extend .fa-clone;
 	}
 	&_search {

@@ -40,6 +40,30 @@ $theme-colors: (
 // Settings for the `<body>` element.
 $body-color:    $gray-700;
 
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	md2: 830px,
+	lg: 992px,
+	lg2: 1050px,
+	xl: 1230px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 620px,
+	md2: 720px,
+	lg: 880px,
+	lg2: 960px,
+	xl: 1140px
+);
+
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
@@ -48,7 +72,7 @@ $body-color:    $gray-700;
 //$font-family-monospace:  "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 //$font-family-base:       $font-family-sans-serif !default;
 //
-//$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
 //$font-size-lg:   1.25rem !default;
 //$font-size-sm:   .875rem !default;
 //
@@ -115,7 +139,7 @@ $navbar-light-active-color:         $white;
 
 // Badges
 $badge-color:                 $navbar-light-color;
-$badge-font-size:             85%;
+$badge-font-size:             $font-size-base;
 //$badge-font-weight:           $font-weight-bold !default;
 $badge-padding-y:             .4em;
 $badge-padding-x:             .6em;

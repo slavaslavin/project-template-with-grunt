@@ -9,7 +9,13 @@
 }
 
 .btn {
+	position: relative;
 	&-white {
 		color: $brand-primary;
+	}
+	.badge {
+		position:absolute;
+		top: .5*$input-btn-padding-x;
+		right: .5*$input-btn-padding-y;
 	}
 }

@@ -82,4 +82,13 @@ var custom = {
 				expires: -1
 			})
 		}
+	},
+	btstrpBrckpnts =  {
+		xs: 0,
+		sm: 576,
+		md: 768,
+		lg: 992,
+		//lg2: 1050,
+		xl: 1200,
+		//xxl: 1230
 	};

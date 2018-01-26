@@ -5,6 +5,7 @@
 	@include media-breakpoint-up(sm) {
 		position: absolute !important;
 		z-index: $zindex-dropdown;
+		z-index: $zindex-dropdown;
 		left: 0;
 		right: 0;
 		background-color: $white;
